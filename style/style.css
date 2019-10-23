@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(49, 50, 61);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+}
+
+li{
+    float : left;
+}
+
+li a{
+    display: block;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+    padding : 10px 10px;
+    transition: all 0.5s ease 0s;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul li a:hover{
+    background-color : white;
+    color : rgb(49, 50, 61);
+    border-radius: 15px;
+} 
+
+#login{
+    color: white;
+}
+
+.close{
+    color: white;
+}
+
+/* .close:hover{
+    background-color : white;
+    color : rgb(49, 50, 61);
+    border-radius: 15px;
+    transition: all 0.5s ease 0s;
+} */
+
+.modal-title{
+    text-align: center;
+}
+
+.modal-dialog{
+    background-color: white;
+}
+
+.btn-secondary:hover{
+    background-color : white;
+    color : rgb(49, 50, 61);
+    border-radius: 15px;
+    transition: all 0.5s ease 0s;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: 0;
+}
+
+#carousel{
+    height: 550px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
