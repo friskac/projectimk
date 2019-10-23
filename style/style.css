@@ -1,8 +1,8 @@
-*{
+nav.navbar{
     margin: 0;
-    padding: 0;
     background-color: rgb(49, 50, 61);
 }
+
 
 ul{
     list-style-type: none;
@@ -33,27 +33,36 @@ ul li a:hover{
     border-radius: 15px;
 } 
 
-#login{
+div.modal-content{
+    /* background-image : url("bola.jpeg"); */
+    color: white;
+    background-color: rgb(49, 50, 61);
+}
+
+a.register:hover{
     color: white;
 }
 
-.close{
-    color: white;
+div.modal-body{
+    text-align: center;
 }
 
-/* .close:hover{
-    background-color : white;
-    color : rgb(49, 50, 61);
-    border-radius: 15px;
-    transition: all 0.5s ease 0s;
-} */
+.w3-input{
+    width: 50%;
+    color: rgb(49, 50, 61);
+}
+
+button.btn-secondary{
+    background-color: rgb(49, 50, 61);
+    color: white;
+}
 
 .modal-title{
     text-align: center;
 }
 
-.modal-dialog{
-    background-color: white;
+div.modal-footer{
+    text-align: center;
 }
 
 .btn-secondary:hover{
@@ -63,18 +72,47 @@ ul li a:hover{
     transition: all 0.5s ease 0s;
 }
 
-img{
-    width: 100%;
+#register{
+    display: none;
 }
 
-.container{
-    width: 100%;
+/* div.textCaptcha{
+    color: white;
+} */
+
+div.container{
     margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-#carousel{
+#Carousel{
     height: 550px;
     position: relative;
     margin: auto;
     overflow: hidden;
+}
+
+ol.carousel-indicators{
+    margin: 0px;
+}
+
+div.footer-copyright{
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    background-color: rgb(49, 50, 61);
+    color: white;
+    font-size: 20px;
+    bottom: 0;
+    padding: 30px;
+}
+
+a.footer{
+    margin: 10px;
+}
+
+a.footer:hover{
+    color: white;
 }
