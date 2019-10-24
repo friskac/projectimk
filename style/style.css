@@ -83,9 +83,13 @@ div.modal-footer{
     display: none;
 }
 
-/* div.textCaptcha{
-    color: white;
-} */
+label{
+    font-size: 12px;
+}
+
+#captchaTextBox{
+    color: black;
+}
 
 div.container{
     margin: 0;
@@ -93,9 +97,8 @@ div.container{
     width: 100%;
 }
 
-#Carousel{
-    height: 550px;
-    position: relative;
+#Carousel, #Carousel2{
+    height: 500px;
     margin: auto;
     overflow: hidden;
 }
@@ -128,4 +131,8 @@ a.footer:hover{
     float: right;
     margin-top: 12px;
     color: white;
+}
+
+#football{
+    text-align: center;
 }

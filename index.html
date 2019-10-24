@@ -15,7 +15,7 @@
     <script src="script/script.js" defer></script>
 </head>
 
-<body>
+<body onload="createCaptcha()">
     <nav class="navbar">
         <div class="container-fluid" id="sudahlogin">
             <ul class="nav navbar-nav nav-pills">
@@ -72,12 +72,34 @@
         </div>
     </div>
 
-    <div id="football" class="tabs w3-container" style="display: none;">
+    <div id="football" class="tabs" style="display: none;">
         <h2>FOOTBALL</h2>
-        <div class="w3-container content">
-            contents here
+        <div class="container">
+            <div id="Carousel2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel2" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel2" data-slide-to="1" ></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/fb1.jpg" alt="" style="width: 100%">
+                    </div>
+                    <div class="item">
+                        <img src="images/fb2.jpg" alt="" style="width: 100%;">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#Carousel2" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#Carousel2" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
     </div>
+
     <!-- login modal -->
     <div class="modal fade right" id="login" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -88,7 +110,7 @@
                     </button>
                     <h4 class="modal-title" id="modalLabel">LOGIN</h4>
                 </div>
-                <div class="modal-body" action="" method="post"">
+                <div class="modal-body" action="" method="post">
                     <label>Username</label><br>
                     <input type="text" id="uname" class="w3-input" placeholder="e.g: Smith"><br>
                     <label>Password</label><br>
@@ -112,19 +134,19 @@
                 </div>
                 <div class="modal-body" action="" method="post" onsubmit="verifyRegister()">
                     <label>Username</label><br>
-                    <input type="text" class="w3-input" placeholder="e.g: Smith"ninput='checkuser()'><br>
+                    <input type="text" class="w3-input" placeholder="e.g: Smith" input='checkuser()'><br>
                     <span id="userauth"></span>
                     <label>Email</label><br>
                     <input type="email" class="w3-input" placeholder="mail@example.com"><br>
                     <label>Password</label><br>
                     <input type="password" class="w3-input"><br>
                     <label>Confirm Password</label><br>
-                    <input type="password" class="w3-input">
-                    <div onload="createCaptcha()" class="textCaptcha">
+                    <input type="password" class="w3-input"><br>
+                    <div class="textCaptcha">
                         <form onsubmit="validateCaptcha()">
                             <div id="captcha"></div>
                             <input type="text" placeholder="Captcha" id="captchaTextBox">
-                            <button type="submit">Submit</button>
+                            <button type="submit" class="btn btn-secondary">SUBMIT</button>
                         </form>
                     </div>
                 </div>

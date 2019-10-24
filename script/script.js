@@ -36,6 +36,9 @@ function validateCaptcha() {
   }
 }
 
+
+// tablink
+
 function openContent(obj, idContentContainer){
   var i, x, tablinks;
 
@@ -52,15 +55,18 @@ function openContent(obj, idContentContainer){
   obj.className += " active";
 }
 
-function showCont(id){
-  var x = document.getElementById(id);
-  if(x.className.indexOf("w3-show") == -1){
-      x.className += " w3-show";
-  }
-  else{
-      x.className = x.className.replace(" w3-show", "");
-  }
-}
+// function showCont(id){
+//   var x = document.getElementById(id);
+//   if(x.className.indexOf("w3-show") == -1){
+//       x.className += " w3-show";
+//   }
+//   else{
+//       x.className = x.className.replace(" w3-show", "");
+//   }
+// }
+
+
+//login
 
 function login(){
   console.log("masuk");
