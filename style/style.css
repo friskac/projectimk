@@ -123,3 +123,9 @@ a.footer{
 a.footer:hover{
     color: white;
 }
+
+#profil{
+    float: right;
+    margin-top: 12px;
+    color: white;
+}

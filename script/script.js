@@ -37,27 +37,54 @@ function validateCaptcha() {
 }
 
 function openContent(obj, idContentContainer){
-    var i, x, tablinks;
+  var i, x, tablinks;
 
-    x = document.getElementsByClassName("tabs");
-    for(i = 0; i < x.length; i++){
-        x[i].style.display = "none";
-    }
+  x = document.getElementsByClassName("tabs");
+  for(i = 0; i < x.length; i++){
+      x[i].style.display = "none";
+  }
 
-    tablinks = document.getElementsByClassName("tablink");
-    for(i = 0; i < x.length ; i++){
-        tablinks[i].className = tablinks[i].className.replace("w3-flat-peter-river", "");
-    }
-    document.getElementById(idContentContainer).style.display = "block";
-    obj.className += "w3-flat-peter-river";
+  tablinks = document.getElementsByClassName("tablink");
+  for(i = 0; i < x.length ; i++){
+      tablinks[i].className = tablinks[i].className.replace("active", "");
+  }
+  document.getElementById(idContentContainer).style.display = "block";
+  obj.className += " active";
 }
 
 function showCont(id){
-    var x = document.getElementById(id);
-    if(x.className.indexOf("w3-show") == -1){
-        x.className += " w3-show";
-    }
-    else{
-        x.className = x.className.replace(" w3-show", "");
-    }
+  var x = document.getElementById(id);
+  if(x.className.indexOf("w3-show") == -1){
+      x.className += " w3-show";
+  }
+  else{
+      x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function login(){
+  console.log("masuk");
+  if(validateLogin()==true){
+    var username = document.getElementById('uname').value;
+    var p = document.getElementById('sudahLogin');
+    var element = document.getElementById('login_tab');
+    element.parentNode.removeChild(element);
+    var node = document.createElement("p");
+    node.setAttribute('id',"profil");
+    var textnode = document.createTextNode("Hello, "+username);
+    node.appendChild(textnode);
+    document.getElementById("sudahlogin").appendChild(node);
+  }
+  else{
+    alert("Please enter a valid login information");
+  }
+}
+
+function validateLogin(){
+  var username = document.getElementById('uname').value;
+  var password = document.getElementById('pwd').value;
+  if(username!="" && password!=""){
+    return true;
+  }
+  return false;
 }

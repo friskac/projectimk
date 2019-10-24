@@ -8,16 +8,18 @@
     <title>ifirstrow</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="script/script.js"></script>
+    <script src="script/script.js" defer></script>
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">HOME</a></li>
+        <div class="container-fluid" id="sudahlogin">
+            <ul class="nav navbar-nav nav-pills">
+                <li class="tablink active" onclick="openContent(this,'home')"><a>HOME</a></li>
                 <li class="tablink" onclick="openContent(this,'football')"><a>FOOTBALL</a></li>
                 <li class="tablink" onclick="openContent(this,'afootball')"><a>AM. FOOTBALL</a></li>
                 <li class="tablink" onclick="openContent(this,'basketball')"><a>BASKETBALL</a></li>
@@ -30,51 +32,45 @@
                 <li class="tablink" onclick="openContent(this,'motosport')"><a>MOTOSPORT</a></li>
                 <li class="tablink" onclick="openContent(this,'other')"><a>OTHER</a></li>
                 <li class="tablink" onclick="openContent(this,'channels')"><a>CHANNELS</a></li>
-                <li data-toggle="modal" data-target="#login"><a href="#login">LOGIN</a></li> 
+                <li data-toggle="modal" data-target="#login" id="login_tab"><a>LOGIN</a></li>
             </ul>
         </div>
     </nav>
 
-    
-
-    <!-- carousel -->
-    <div class="container">
-        <div id="Carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#Carousel" data-slide-to="1" ></li>
-                <li data-target="#Carousel" data-slide-to="2" ></li>
-                <li data-target="#Carousel" data-slide-to="3" ></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images/slide1.jpg" alt="" style="width: 100%">
+    <div id="home" class="tabs">
+        <div class="container">
+            <div id="Carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1" ></li>
+                    <li data-target="#Carousel" data-slide-to="2" ></li>
+                    <li data-target="#Carousel" data-slide-to="3" ></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/home1.jpg" alt="" style="width: 100%">
+                    </div>
+                    <div class="item">
+                        <img src="images/home2.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="item">
+                        <img src="images/home3.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="item">
+                        <img src="images/home4.png" alt="" style="width: 100%;">
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="images/slide2.jpg" alt="" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="images/slide3.jpg" alt="" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="images/slide4.png" alt="" style="width: 100%;">
-                </div>
+                <a class="left carousel-control" href="#Carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#Carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="left carousel-control" href="#Carousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#Carousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </div>
-    <!-- <div class="footer-copyright text-center py-3">© 2019 Copyright
-        <a class="footer" href="">ABOUT US</a>
-        <a class="footer" href="">CONTACT US</a>
-    </div> -->
-<!-- tabbed layout -->
 
     <div id="football" class="tabs w3-container" style="display: none;">
         <h2>FOOTBALL</h2>
@@ -92,16 +88,16 @@
                     </button>
                     <h4 class="modal-title" id="modalLabel">LOGIN</h4>
                 </div>
-                <div class="modal-body">
-                    <label>Email</label><br>
-                    <input type="text" class="w3-input"><br>
+                <div class="modal-body" action="" method="post"">
+                    <label>Username</label><br>
+                    <input type="text" id="uname" class="w3-input" placeholder="e.g: Smith"><br>
                     <label>Password</label><br>
-					<input type="password" class="w3-input">
+					<input type="password" id="pwd" class="w3-input">
                 </div>
                 <div class="modal-footer">
                     <p>Don't have account?</p><a class="register" href="#register" data-toggle="modal" data-target="#register">Register here</a><br>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">LOGIN</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="login()">LOGIN</button>
                 </div>
             </div>
         </div>
@@ -114,9 +110,12 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="modalLabel">REGISTER</h4>
                 </div>
-                <div class="modal-body" action="" method="post">
+                <div class="modal-body" action="" method="post" onsubmit="verifyRegister()">
+                    <label>Username</label><br>
+                    <input type="text" class="w3-input" placeholder="e.g: Smith"ninput='checkuser()'><br>
+                    <span id="userauth"></span>
                     <label>Email</label><br>
-                    <input type="text" class="w3-input"><br>
+                    <input type="email" class="w3-input" placeholder="mail@example.com"><br>
                     <label>Password</label><br>
                     <input type="password" class="w3-input"><br>
                     <label>Confirm Password</label><br>
@@ -130,7 +129,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <p>Already have account?</p><a href="#register" data-toggle="modal" data-target="#login">LOGIN HERE</a>
+                    <p>Already have account?</p><button type="button" class="btn btn-secondary" data-dismiss="modal">LOGIN HERE</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">SUBMIT</button>
                 </div>
             </div>
