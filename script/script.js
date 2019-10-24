@@ -1,5 +1,6 @@
 var code;
 function createCaptcha() {
+  console.log("masuk");
   //clear the contents of captcha div first 
   document.getElementById('captcha').innerHTML = "";
   var charsArray =

@@ -15,7 +15,7 @@
     <script src="script/script.js" defer></script>
 </head>
 
-<body>
+<body onload="createCaptcha()">
     <nav class="navbar">
         <div class="container-fluid" id="sudahlogin">
             <ul class="nav navbar-nav nav-pills">
@@ -120,11 +120,11 @@
                     <input type="password" class="w3-input"><br>
                     <label>Confirm Password</label><br>
                     <input type="password" class="w3-input">
-                    <div onload="createCaptcha()" class="textCaptcha">
+                    <div class="textCaptcha">
                         <form onsubmit="validateCaptcha()">
                             <div id="captcha"></div>
-                            <input type="text" placeholder="Captcha" id="captchaTextBox">
-                            <button type="submit">Submit</button>
+                            <input type="text" placeholder="Enter Captcha Text" id="captchaTextBox">
+                            <button type="submit" class="w3-button">Submit</button>
                         </form>
                     </div>
                 </div>
