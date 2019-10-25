@@ -46,7 +46,7 @@ li a {
     padding: 10px 10px;
     transition: all 0.5s ease 0s;
     border-radius: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans Regular';
 }
 
 ul li a:hover {
@@ -150,6 +150,22 @@ a.footer:hover {
     color: white;
 }
 
-#football {
+/* football */
+#konten, #football{
+    background-color: rgb(49, 50, 61);
+    color: white;
+    font-family: 'Lucida Sans Regular';
+}
+
+.judul{
     text-align: center;
+    margin: 0;
+    letter-spacing: 0.1cm;
+    font-family: 'Lucida Sans Regular';
+
+}
+
+.time{
+    height: 20%;
+    background-color: black;
 }
