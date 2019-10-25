@@ -151,10 +151,14 @@ a.footer:hover {
 }
 
 /* football */
-#konten, #football{
+.tabs{
     background-color: rgb(49, 50, 61);
     color: white;
     font-family: 'Lucida Sans Regular';
+}
+
+#konten{
+    padding: 16px;
 }
 
 .judul{
@@ -163,9 +167,4 @@ a.footer:hover {
     letter-spacing: 0.1cm;
     font-family: 'Lucida Sans Regular';
 
-}
-
-.time{
-    height: 20%;
-    background-color: black;
 }
