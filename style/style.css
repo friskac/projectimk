@@ -1,26 +1,26 @@
-div.logo{
+div.logo {
     background-color: rgb(49, 50, 61);
     height: 20%;
 }
 
-img.logo{
+img.logo {
     margin-left: 35%;
     display: inline;
 }
 
-div.search{
+div.search {
     float: right;
     display: inline;
     margin: 24px;
 }
 
-nav.navbar{
+nav.navbar {
     margin: 0;
     background-color: rgb(49, 50, 61);
 }
 
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -28,8 +28,8 @@ ul{
     display: inline;
 }
 
-li{
-    float : left;
+li {
+    float: left;
 }
 
 /* li.active{
@@ -38,92 +38,93 @@ li{
     border-radius: 10px;
 } */
 
-li a{
+li a {
     display: block;
     font-size: 10px;
     color: white;
     text-decoration: none;
-    padding : 10px 10px;
+    padding: 10px 10px;
     transition: all 0.5s ease 0s;
     border-radius: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-ul li a:hover{
-    background-color : white;
-    color : rgb(49, 50, 61);
+ul li a:hover {
+    background-color: white;
+    color: rgb(49, 50, 61);
     border-radius: 15px;
     cursor: pointer;
-} 
+}
 
-div.modal-content{
+div.modal-content {
     /* background-image : url("bola.jpeg"); */
     color: white;
     background-color: rgb(49, 50, 61);
 }
 
-a.register:hover{
+a.register:hover {
     color: white;
 }
 
-div.modal-body{
+div.modal-body {
     text-align: center;
 }
 
-.w3-input{
+.w3-input {
     width: 50%;
     color: rgb(49, 50, 61);
 }
 
-button.btn-secondary{
+button.btn-secondary {
     background-color: rgb(49, 50, 61);
     color: white;
 }
 
-.modal-title{
+.modal-title {
     text-align: center;
 }
 
-div.modal-footer{
+div.modal-footer {
     text-align: center;
 }
 
-.btn-secondary:hover{
-    background-color : white;
-    color : rgb(49, 50, 61);
+.btn-secondary:hover {
+    background-color: white;
+    color: rgb(49, 50, 61);
     border-radius: 15px;
     transition: all 0.5s ease 0s;
 }
 
-#register{
+#register {
     display: none;
 }
 
-label{
+label {
     font-size: 12px;
 }
 
-#captchaTextBox{
+#captchaTextBox {
     color: black;
 }
 
-div.container{
+div.container {
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-#Carousel, #Carousel2{
-    height: 500px;
+#Carousel,
+#Carousel2 {
+    height: 100%;
     margin: auto;
     overflow: hidden;
 }
 
-ol.carousel-indicators{
+ol.carousel-indicators {
     margin: 0px;
 }
 
-div.footer-copyright{
+div.footer-copyright {
     height: 15%;
     width: 100%;
     position: absolute;
@@ -135,20 +136,20 @@ div.footer-copyright{
     padding: 30px;
 }
 
-a.footer{
+a.footer {
     margin: 10px;
 }
 
-a.footer:hover{
+a.footer:hover {
     color: white;
 }
 
-#profil{
+#profil {
     float: right;
     margin-top: 12px;
     color: white;
 }
 
-#football{
+#football {
     text-align: center;
 }
