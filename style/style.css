@@ -1,3 +1,4 @@
+
 div.logo {
     background-color: rgb(49, 50, 61);
     height: 20%;
@@ -14,11 +15,25 @@ div.search {
     margin: 42px;
 }
 
+.btnsearch{
+    background-color: white;
+    color: rgb(49, 50, 61);
+    border-radius: 5px;
+}
+
+.inputsearch{
+    border-radius: 5px;
+    font-family: 'Lucida Sans Regular';
+}
+
+.search{
+    border-radius: 5px;
+}
+
 nav.navbar {
     margin: 0;
     background-color: rgb(49, 50, 61);
 }
-
 
 ul {
     list-style-type: none;
@@ -166,5 +181,26 @@ a.footer:hover {
     margin: 0;
     letter-spacing: 0.1cm;
     font-family: 'Lucida Sans Regular';
+    padding: 16px;
 
+}
+
+/* channels */
+#channels{
+    font-family: 'Lucida Sans Regular';
+    font-size: 16px;
+}
+
+#sports, #teams, #basket{
+    background-color: rgb(98, 127, 255);
+}
+
+.sporttv, .teamstv, .baskettv{
+    width: 100px;
+    height: 100px;
+    margin: 24px;
+}
+
+.w3-button:hover{
+    transition: all 0.5s ease 0s;
 }
