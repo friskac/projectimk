@@ -25,14 +25,16 @@ function createCaptcha() {
   document.getElementById("captcha").appendChild(canv); // adds the canvas to the body element
 }
 
+var validCaptcha = false;
 function validateCaptcha() {
   event.preventDefault();
   debugger
   if (document.getElementById("captchaTextBox").value == code) {
-    alert("Valid Captcha")
+    validCaptcha = true;
+    var element = document.getElementById("form_captcha");
+    element.parentNode.removeChild(element);
   }else{
     alert("Invalid Captcha. try Again");
-    createCaptcha();
   }
 }
 
@@ -90,9 +92,59 @@ function validateLogin(){
   var username = document.getElementById('uname').value;
   var password = document.getElementById('pwd').value;
   if(username!="" && password!=""){
+    document.getElementById("berhasilLogin").setAttribute("data-dismiss","modal");
     return true;
   }
   return false;
+}
+
+//register
+function verifyRegister(){
+  var username = document.getElementById("userRegister").value;
+  var email = document.getElementById("emailRegister").value;
+  var password = document.getElementById("passRegister").value;
+  var verifyPass = document.getElementById("verifyPass").value;
+  if(username=="" && email=="" && password=="" && verifyPass=="" && validCaptcha==false){
+    alert("Please register yourself");
+  }
+  else if(username==""){
+    alert("Please enter your username");
+  }
+  else if(email==""){
+    alert("Please enter a valid email address");
+  }
+  else if(password==""){
+    alert("Please enter your password");
+  }
+  else if(verifyPass==""){
+    alert("Please confirm your password");
+  }
+  else if(password!=verifyPass){
+    alert("Password doesn't match");
+  }
+  else if(validCaptcha==false){
+    alert("Please Submit Captcha");
+  }
+  else{
+    document.getElementById("berhasilRegister").setAttribute("data-dismiss","modal");
+    alert("Welcome to IFirstRow Sports! Enjoy!");
+    document.getElementById("userRegister").value="";
+    document.getElementById("emailRegister").value="";
+    document.getElementById("passRegister").value="";
+    var verifyPass = document.getElementById("verifyPass").value="";
+    addElement("captchaField","form","form_captcha","<div id='captcha'></div><input type='text' placeholder='Captcha' id='captchaTextBox'><i onclick='createCaptcha()' class='fa fa-refresh' aria-hidden='true'></i><input type='submit' class='btn btn-secondary btn_submit' value='SUBMIT'>");
+    document.getElementById("form_captcha").setAttribute("onsubmit","validateCaptcha()");
+    createCaptcha();
+  }
+}
+
+function addElement(parentId, elementTag, elementId, html) {
+  // Adds an element to the document
+  var p = document.getElementById(parentId);
+  var newElement = document.createElement(elementTag);
+  newElement.setAttribute('id', elementId);
+  newElement.innerHTML = html;
+  p.appendChild(newElement);
 }
 
 //time

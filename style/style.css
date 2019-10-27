@@ -1,11 +1,18 @@
 
+#web_clock{
+    float: left;
+    padding: 16px;
+    color: white;
+    margin-top: 3%;
+}
+
 div.logo {
     background-color: rgb(49, 50, 61);
     height: 20%;
 }
 
 img.logo {
-    margin-left: 35%;
+    margin-left: 15%;
     display: inline;
 }
 
@@ -172,10 +179,6 @@ a.footer:hover {
     font-family: 'Lucida Sans Regular';
 }
 
-#konten{
-    padding: 16px;
-}
-
 .judul{
     text-align: center;
     margin: 0;
@@ -203,4 +206,8 @@ a.footer:hover {
 
 .w3-button:hover{
     transition: all 0.5s ease 0s;
+}
+
+.btn_submit{
+    color: black;
 }
