@@ -1,6 +1,4 @@
-body {
-    background-size: cover;
-}
+
 
 #web_clock {
     float: left;
@@ -173,16 +171,17 @@ a.footer:hover {
 
 .footer {
     position: inherit;
+    background-color: rgb(49, 50, 61);
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 40px;
     color: white;
     font-family: 'Lucida Sans Regular';
     font-size: x-small;
     text-decoration: none;
     text-align: center;
     filter: alpha(opacity=60);
-    padding: 16px;
+    padding: 10px;
 }
 
 .about:hover {
@@ -191,6 +190,10 @@ a.footer:hover {
 }
 
 /* football */
+.football{
+    background-size: cover;
+}
+
 .tabs {
     background-color: rgb(49, 50, 61);
     color: white;
@@ -204,6 +207,15 @@ a.footer:hover {
     font-family: 'Lucida Sans Regular';
     padding: 16px;
 
+}
+
+.panel-group{
+    padding: 24px;
+}
+
+.panel-body a{
+    color: rgb(49, 50, 61);
+    margin: 16px;
 }
 
 /* channels */
