@@ -17,7 +17,7 @@
     <script src="script/script.js" defer></script>
 </head>
 
-<body onload="createCaptcha()"  style="background-image: url('images/cover.jpg');">
+<body onload="createCaptcha()" style="background-image: url('images/cover.jpg');">
     <div class="logo">
         <div id="web_clock">
             <span>Website Clock : </span>
@@ -25,7 +25,7 @@
         </div>
         <img src="images/Logo.png" alt="iFirstRow" class="logo">
         <div class="search">
-            <input type="text" placeholder="Search..." name="search" class="inputsearch">
+            <input type="text" placeholder="Search..." name="search" class="inputsearch form-control">
             <button type="submit" class="btnsearch"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
     </div>
@@ -49,7 +49,7 @@
             </ul>
         </div>
     </nav>
-    
+
 
     <div id="home" class="tabs">
         <div class="container">
@@ -85,7 +85,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <div id="football" class="tabs" style="display: none;">
         <h2 class="judul">FOOTBALL</h2>
@@ -216,7 +216,7 @@
         </div>
     </div>
     <div class="footer">
-        Copyright © 2019 
+        Copyright © 2019
         <a href="" class="about">ABOUT</a>
         <a href="" class="about">CONTACT</a>
     </div>
@@ -240,8 +240,7 @@
                     <p>Don't have account?</p><a class="register" href="#register" data-toggle="modal"
                         data-target="#register">Register here</a><br>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
-                    <button type="button" class="btn btn-secondary" id="berhasilLogin"
-                        onclick="login()">LOGIN</button>
+                    <button type="button" class="btn btn-secondary" id="berhasilLogin" onclick="login()">LOGIN</button>
                 </div>
             </div>
         </div>
@@ -257,7 +256,8 @@
                 </div>
                 <div class="modal-body" action="" method="post">
                     <label>Username</label><br>
-                    <input type="text" class="w3-input" id="userRegister" placeholder="e.g: Smith" input='checkuser()'><br>
+                    <input type="text" class="w3-input" id="userRegister" placeholder="e.g: Smith"
+                        input='checkuser()'><br>
                     <span id="userauth"></span>
                     <label>Email</label><br>
                     <input type="email" id="emailRegister" class="w3-input" placeholder="mail@example.com"><br>
@@ -277,7 +277,8 @@
                 <div class="modal-footer">
                     <p>Already have account?</p><button type="button" class="btn btn-secondary"
                         data-dismiss="modal">LOGIN HERE</button>
-                    <button type="button" id="berhasilRegister" class="btn btn-secondary" onclick="verifyRegister()">SUBMIT</button>
+                    <button type="button" id="berhasilRegister" class="btn btn-secondary"
+                        onclick="verifyRegister()">SUBMIT</button>
                 </div>
             </div>
         </div>
