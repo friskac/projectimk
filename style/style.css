@@ -139,7 +139,11 @@ div.container {
 }
 
 #Carousel,
-#Carousel2 {
+#Carousel2,
+#Carousel3,
+#Carousel4,
+#Carousel5,
+#Carousel6 {
     height: 600px;
     margin: auto;
     overflow: hidden;

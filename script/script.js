@@ -177,3 +177,13 @@ function showTime(){
 }
 
 showTime();
+
+// search bar
+$(document).ready(function(){
+  $("#myInput").on("keyup", function(){
+    var value = $(this).val().toLowerCase();
+    $("myList a").filter(function(){
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
