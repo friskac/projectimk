@@ -179,11 +179,31 @@ function showTime(){
 showTime();
 
 // search bar
-$(document).ready(function(){
-  $("#myInput").on("keyup", function(){
-    var value = $(this).val().toLowerCase();
-    $("myList a").filter(function(){
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
+
+$('#myInput').keyup(function(){
+  var valThis = $(this).val().toLowerCase();
+   if(valThis === ""){
+       $('div.tabs').show();
+   } else {
+       $('div.tabs').each(function(){
+           var text = $(this).find('a').text().toLowerCase();
+           if (text.indexOf(valThis) >= 0) { $(this).show(); }
+           else { $(this).hide(); }
+       });
+  }
 });
+// pas search bisa nampilin langsung yg dicari tp pas diapus input searchnya, gabisa balik ke awal tampilannya(harus refresh)
+
+// $('#myInput').keyup(function(){
+//   var valThis = $(this).val().toLowerCase();
+//       if(valThis == ""){
+//           $('.panel').show();
+//       } else {
+//           $('.panel').each(function(){
+//           var text = $(this).find("a").text().toLowerCase();
+//           (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
+//       });
+//   };
+// });
+//bisa search kalo tablink uda di klik(misal football), baru kliatan search nya. 
+//kalo input search nya di apus, bisa balik ke awal

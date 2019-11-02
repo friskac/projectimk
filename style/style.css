@@ -143,7 +143,10 @@ div.container {
 #Carousel3,
 #Carousel4,
 #Carousel5,
-#Carousel6 {
+#Carousel6,
+#Carousel8,
+#Carousel9,
+#Carousel10 {
     height: 600px;
     margin: auto;
     overflow: hidden;
@@ -184,7 +187,6 @@ a.footer:hover {
     font-size: x-small;
     text-decoration: none;
     text-align: center;
-    filter: alpha(opacity=60);
     padding: 10px;
 }
 
