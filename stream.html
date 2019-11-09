@@ -26,16 +26,45 @@
                 <button type="submit" class="btnsearch"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
         </div>
-        <div class="container">
-            <div class="w3-margin fullscreen">
-                <button class="btn btn-secondary">Fullscreen Mode</button>
+        <nav class="navbar">
+                <div class="container-fluid" id="sudahlogin">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="tablink active" onclick="openContent(this,'home')"><a>HOME</a></li>
+                        <!-- <li class="tablink"><a  href="index.html">HOME</a></li> -->
+                        <li class="tablink" onclick="openContent(this,'football')"><a>FOOTBALL</a></li>
+                        <li class="tablink" onclick="openContent(this,'afootball')"><a>AM. FOOTBALL</a></li>
+                        <li class="tablink" onclick="openContent(this,'basketball')"><a>BASKETBALL</a></li>
+                        <li class="tablink" onclick="openContent(this,'rugby')"><a>RUGBY</a></li>
+                        <li class="tablink" onclick="openContent(this,'icehockey')"><a>ICE HOCKEY</a></li>
+                        <li class="tablink" onclick="openContent(this,'olympics')"><a>OLYMPICS</a></li>
+                        <li class="tablink" onclick="openContent(this,'boxing')"><a>BOXING</a></li>
+                        <li class="tablink" onclick="openContent(this,'tennis')"><a>TENNIS</a></li>
+                        <li class="tablink" onclick="openContent(this,'baseball')"><a>BASEBALL</a></li>
+                        <li class="tablink" onclick="openContent(this,'motosport')"><a>MOTOSPORT</a></li>
+                        <li class="tablink" onclick="openContent(this,'other')"><a>OTHER</a></li>
+                        <li class="tablink" onclick="openContent(this,'channels')"><a>CHANNELS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        <div class="containerStream">
+            <div class="w3-padding fullscreen">
+                <button onclick="openFullscreen()" class="btn btn-secondary">Fullscreen Mode</button>
                 <p><strong>Tip: </strong>Press the "Esc" key to exit full screen</p>
+                <video width="50%" controls id="videobasket">
+                    <source src="video/nbatop10.mp4" type="video/mp4"> 
+                    <source src="video/nbatop10.ogg" type="video/ogg">
+                </video>
+                <div class="w3-margin">
+                    Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more!
+
+                </div>
             </div>
-            <video width="100%" controls id="videobasket">
-                <source src="" type=""> 
-                <source src="" type="">
-            </video>
+            
         </div>
-        
+        <div class="footer">
+            Copyright © 2019
+            <a href="" class="about">ABOUT</a>
+            <a href="" class="about">CONTACT</a>
+        </div>
     </body>
 </html>
