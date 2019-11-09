@@ -147,26 +147,6 @@ ol.carousel-indicators {
     margin: 0px;
 }
 
-/* div.footer-copyright {
-    height: 15%;
-    width: 100%;
-    position: absolute;
-    padding: 20px;
-    background-color: rgb(49, 50, 61);
-    color: white;
-    font-size: 20px;
-    bottom: 0;
-    padding: 30px;
-}
-
-a.footer {
-    margin: 10px;
-}
-
-a.footer:hover {
-    color: white;
-} */
-
 .footer {
     position: inherit;
     background-color: rgb(49, 50, 61);
@@ -216,7 +196,7 @@ a.footer:hover {
 }
 
 /* other  */
-.dropdown{
+/* .dropdown{
     float: left;
     overflow: hidden;
 }
@@ -251,7 +231,7 @@ a.footer:hover {
     background-color: white;
     color: rgb(49, 50, 61);
     transition: all 0.5s ease 0s;
-}
+} */
 
 /* channels */
 #channels {
@@ -262,7 +242,7 @@ a.footer:hover {
 #sports,
 #teams,
 #basket {
-    background-color: rgb(98, 127, 255);
+    background-color: #c9d1d3;
 }
 
 .sporttv,
@@ -285,4 +265,9 @@ a.footer:hover {
     color:white;
     float: right;
     margin-top: 11px;
+}
+
+/* stream  */
+.container{
+    background-color: #c9d1d3;
 }

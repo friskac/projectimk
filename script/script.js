@@ -207,3 +207,20 @@ $('#myInput').keyup(function(){
 // });
 //bisa search kalo tablink uda di klik(misal football), baru kliatan search nya. 
 //kalo input search nya di apus, bisa balik ke awal
+
+// videobasket
+var elem = document.getElementById("videobasket");
+function openFullscreen(){
+  if(elem.requestFullscreen){
+    elem.requestFullscreen();
+  }
+  else if(elem.mozRequestFullScreen){//firefox
+    elem.mozRequestFullScreen();
+  }
+  else if(elem.webkitRequestFullscreen){//chrome 
+    elem.webkitRequestFullscreen();
+  }
+  else if (elem.msRequestFullscreen){//edge
+    elem.msRequestFullscreen();
+  }
+}
