@@ -50,7 +50,7 @@ function openContent(obj, idContentContainer){
   }
 
   tablinks = document.getElementsByClassName("tablink");
-  for(i = 0; i < x.length ; i++){
+  for(i = 0; i < tablinks.length ; i++){
       tablinks[i].className = tablinks[i].className.replace("active", "");
   }
   document.getElementById(idContentContainer).style.display = "block";
@@ -179,34 +179,19 @@ function showTime(){
 showTime();
 
 // search bar
-
 $('#myInput').keyup(function(){
   var valThis = $(this).val().toLowerCase();
-   if(valThis === ""){
-       $('div.tabs').show();
-   } else {
-       $('div.tabs').each(function(){
-           var text = $(this).find('a').text().toLowerCase();
-           if (text.indexOf(valThis) >= 0) { $(this).show(); }
-           else { $(this).hide(); }
-       });
-  }
+      if(valThis == ""){
+          $('.panel').show();
+          $('div.carousel').show();
+      } else {
+          $('.panel').each(function(){
+          var text = $(this).find("a").text().toLowerCase();
+          $('div.carousel').hide();
+          (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
+      });
+  };
 });
-// pas search bisa nampilin langsung yg dicari tp pas diapus input searchnya, gabisa balik ke awal tampilannya(harus refresh)
-
-// $('#myInput').keyup(function(){
-//   var valThis = $(this).val().toLowerCase();
-//       if(valThis == ""){
-//           $('.panel').show();
-//       } else {
-//           $('.panel').each(function(){
-//           var text = $(this).find("a").text().toLowerCase();
-//           (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
-//       });
-//   };
-// });
-//bisa search kalo tablink uda di klik(misal football), baru kliatan search nya. 
-//kalo input search nya di apus, bisa balik ke awal
 
 // videobasket
 var elem = document.getElementById("videobasket");

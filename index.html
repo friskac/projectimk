@@ -34,7 +34,6 @@
             <ul class="nav navbar-nav nav-pills">
                 <li class="tablink active" onclick="openContent(this,'home')"><a>HOME</a></li>
                 <li class="tablink" onclick="openContent(this,'football')"><a>FOOTBALL</a></li>
-                <li class="tablink" onclick="openContent(this,'afootball')"><a>AM. FOOTBALL</a></li>
                 <li class="tablink" onclick="openContent(this,'basketball')"><a>BASKETBALL</a></li>
                 <li class="tablink" onclick="openContent(this,'rugby')"><a>RUGBY</a></li>
                 <li class="tablink" onclick="openContent(this,'icehockey')"><a>ICE HOCKEY</a></li>
@@ -43,7 +42,6 @@
                 <li class="tablink" onclick="openContent(this,'tennis')"><a>TENNIS</a></li>
                 <li class="tablink" onclick="openContent(this,'baseball')"><a>BASEBALL</a></li>
                 <li class="tablink" onclick="openContent(this,'motosport')"><a>MOTOSPORT</a></li>
-                <li class="tablink" onclick="openContent(this,'other')"><a>OTHER</a></li>
                 <li class="tablink" onclick="openContent(this,'channels')"><a>CHANNELS</a></li>
                 <li data-toggle="modal" data-target="#login" id="login_tab"><a>LOGIN</a></li>
             </ul>
@@ -51,7 +49,7 @@
     </nav>
 
 
-    <div id="home" class="tabs">
+    <div id="home" class="tabs home">
         <div class="container">
             <div id="Carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -86,7 +84,7 @@
         </div>
     </div>
 
-    <!-- football  -->
+<!-- football  -->
     <div id="football" class="tabs" style="display: none;">
         <h2 class="judul">FOOTBALL</h2>
         <div class="container">
@@ -154,7 +152,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football3" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 XoneTV</a>
+                                <a href="#football3" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 Premier League</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football3">
@@ -216,7 +214,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football7" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 EusroSports</a>
+                                <a href="#football7" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 UEFA Europe League</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football7">
@@ -231,7 +229,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football8" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 Skysports</a>
+                                <a href="#football8" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 UEFA Champions League</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football8">
@@ -254,68 +252,6 @@
                                 <a href="">BT SPORTS 1</a>
                                 <a href="">BT SPORTS 2</a>
                                 <a href="">BT SPORTS 3</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- am. football -->
-    <div id="afootball" class="tabs" style="display: none; ">
-        <h2 class="judul">AM. FOOTBALL</h2>
-        <div class="container">
-            <div id="Carousel3" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#Carousel3" data-slide-to="0" class="active"></li>
-                    <li data-target="#Carousel3" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <a href=""><img src="images/MULiv.jpg" alt="" style="width: 100%"></a>
-                    </div>
-                    <div class="item">
-                        <a href=""><img src="images/fb2.jpg" alt="" style="width: 100%;"></a>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#Carousel3" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#Carousel3" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <div class="inner-container" >
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5 class="panel-title">
-                                <a href="#afootball1" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 ESPN</a>
-                            </h5>
-                        </div>
-                        <div class="panel-collapse collapse in" id="afootball1">
-                            <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">ESPN</a>
-                                <a href="">ESPNU</a>
-                                <a href="">ESPNU 2</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5 class="panel-title">
-                                <a href="#afootball2" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 NFL Network</a>
-                            </h5>
-                        </div>
-                        <div class="panel-collapse collapse" id="afootball2">
-                            <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
                             </div>
                         </div>
                     </div>
