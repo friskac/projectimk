@@ -1,26 +1,51 @@
 
 
 #web_clock {
-    float: left;
-    padding: 16px;
+    padding: 36px;
     color: white;
-    margin-top: 3%;
 }
 
-div.logo {
+div.row {
     background-color: rgb(49, 50, 61);
     height: 20%;
 }
 
 img.logo {
-    margin-left: 15%;
     display: inline;
 }
 
-div.search {
+.searchcol{
+    width: 50%;
     float: right;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.btnlive{
+    position: relative;
+    background-color: white;
+    color: rgb(49, 50, 61);
+    border-radius: 5px;
+    font-family: 'Lucida Sans Regular';
     display: inline;
-    margin: 42px;
+    margin: 40px;
+    
+}
+
+.btnlive:hover{
+    background-color: rgb(49, 50, 61);
+    color: white;
+    border-radius: 15px;
+    transition: all 0.5s ease 0s;
+}
+
+.inputsearch {
+    border-radius: 5px;
+    font-family: 'Lucida Sans Regular';
+    display: inline;
 }
 
 .btnsearch {
@@ -29,12 +54,7 @@ div.search {
     color: rgb(49, 50, 61);
     border-radius: 5px;
     top: -31px;
-    left: 180px;
-}
-
-.inputsearch {
-    border-radius: 5px;
-    font-family: 'Lucida Sans Regular';
+    left: 160px;
 }
 
 .search {
@@ -246,12 +266,19 @@ ol.carousel-indicators {
 }
 
 .sporttv,
-.teamstv,
-.baskettv {
+.baskettv{
     width: 100px;
     height: 100px;
     margin: 24px;
 }
+
+.teamstv{
+    width: 200px;
+    height: 100px;
+    margin: 24px;
+}
+
+
 
 .w3-button:hover {
     transition: all 0.5s ease 0s;
@@ -262,9 +289,10 @@ ol.carousel-indicators {
 }
 
 #profil{
-    color:white;
-    float: right;
-    margin-top: 11px;
+    color: white;
+    display: inline;
+    position: absolute;
+    margin: 12px;
 }
 
 /* stream  */
