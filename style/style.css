@@ -14,15 +14,20 @@ img.logo {
     display: inline;
 }
 
-.searchcol{
-    width: 50%;
-    float: right;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 10px;
-    padding-right: 10px;
+
+#myInput{
+    width: 20%;   
+    margin-top: 5px;
+    margin-left: 25px;
+    padding: 10px;
+    display: inline;
+    position: absolute;
+
 }
 
+#login_tab{
+    margin-top: 40px;
+}
 
 .btnlive{
     position: relative;
@@ -31,7 +36,9 @@ img.logo {
     border-radius: 5px;
     font-family: 'Lucida Sans Regular';
     display: inline;
-    margin: 40px;
+    margin-top: 40px;
+    margin-left: 40%;
+    padding: 36px;
     
 }
 
@@ -53,8 +60,8 @@ img.logo {
     background-color: white;
     color: rgb(49, 50, 61);
     border-radius: 5px;
-    top: -31px;
-    left: 160px;
+    left: 260px;
+    top: 8px;
 }
 
 .search {
@@ -141,6 +148,12 @@ label {
 
 #captchaTextBox {
     color: black;
+}
+
+canvas#captcha{
+    background-color: white;
+    padding: 2px;
+    border-radius: 2px;
 }
 
 div.container {

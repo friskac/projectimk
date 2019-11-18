@@ -27,11 +27,8 @@
             <img src="images/Logo.png" alt="iFirstRow" class="logo">
         </div>
         <div class="col-sm-4">
-            <button type="button" class="btnlive" ><a href="http://scoresinplay.com/">Live Scores</a></button>
-            <div class="searchcol">
-                <input type="text" id="myInput" placeholder="Search..." name="search" class="inputsearch form-control">
-                <button type="submit" class="btnsearch"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </div>
+            <button type="button" class="btn btn-secondary btnlive" ><a href="http://scoresinplay.com/">LIVE SCORES</a></button>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#login" id="login_tab"><a>LOGIN</a></li>
         </div>
     </div>
     <nav class="navbar">
@@ -48,8 +45,9 @@
                 <li class="tablink" onclick="openContent(this,'baseball')"><a>BASEBALL</a></li>
                 <li class="tablink" onclick="openContent(this,'motosport')"><a>MOTOSPORT</a></li>
                 <li class="tablink" onclick="openContent(this,'channels')"><a>CHANNELS</a></li>
-                <li data-toggle="modal" data-target="#login" id="login_tab"><a>LOGIN</a></li>
             </ul>
+            <input type="text" id="myInput" placeholder="Search..." name="search" class="inputsearch form-control">
+            <button type="submit" class="btnsearch"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
     </nav>
 
