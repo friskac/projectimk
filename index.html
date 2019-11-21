@@ -13,7 +13,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <script src="script/script.js" defer></script>
 </head>
 
@@ -26,13 +25,21 @@
         <div class="col-sm-4">
             <img src="images/Logo.png" alt="iFirstRow" class="logo">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 dropdown" id="sudahlogin">
             <button type="button" class="btn btn-secondary btnlive" ><a href="http://scoresinplay.com/">LIVE SCORES</a></button>
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#login" id="login_tab"><a>LOGIN</a></li>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#login" id="login_tab"><a>LOGIN</a></button>
+            <!-- <div class="dropdown"> -->
+                <i class="fa fa-cog dropdown-toggle" data-toggle="dropdown" id="btnsettings"><a href=""></a></i>
+                <ul class="dropdown-menu">
+                    <li><a href="">LOGOUT</a></li>
+                    <li><a href="upload.html">UPLOAD VIDEO</a></li>
+                </ul>
+            <!-- </div> -->
+            
         </div>
     </div>
     <nav class="navbar">
-        <div class="container-fluid" id="sudahlogin">
+        <div class="container-fluid" >
             <ul class="nav navbar-nav nav-pills">
                 <li class="tablink active" onclick="openContent(this,'home')"><a>HOME</a></li>
                 <li class="tablink" onclick="openContent(this,'football')"><a>FOOTBALL</a></li>
@@ -976,11 +983,51 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        Copyright © 2019
-        <a href="" class="about">ABOUT</a>
-        <a href="" class="about">CONTACT</a>
-    </div>
+    <footer class="page-footer ">
+        <div class="container-fluid ">
+            <div class="row">
+                <hr class="clearfix w-100 d-md-none pb-3">  
+                <div class="col-md-6 mt-md-0 mt-3 w3-center">
+                    <h5 class="font-weight-bold">ABOUT</h5>
+                    <p>...</p>
+                </div>
+            
+                <div class="col-md-6 mb-md-0 mb-3 w3-center">
+                    <h5 class="font-weight-bold">CONTACT US</h5>
+                    <div class="row">
+                        <div class="col-md-2 w3-margin">
+                            <img src="images/2017730007.JPG" class="img-circle foto-footer" alt="Ignatius Michael Liondy">
+                        </div>
+                        <div class="col-md-2 w3-margin">
+                            <h6>IGNATIUS MICHAEL LIONDY</h6>
+                            <h6>2017730007</h6>
+                        </div>
+                        <div class="col-md-2 w3-margin">
+                            <h6>michaelliondy05@gmail.com</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 w3-margin">
+                            <img src="images/2017730030.JPG" class="img-circle foto-footer" alt="Friska Christiana">
+                        </div>
+                        <div class="col-md-2 w3-margin">
+                            <h6>FRISKA CHRISTIANA</h6>
+                            <h6>2017730030</h6>
+                        </div>
+                        <div class="col-md-2 w3-margin">
+                            <h6>christianafriska@gmail.com</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center w3-margin">
+            <h6>© 2018 Copyright</h6>
+        </div>
+          
+    </footer>
+
     <!-- login modal -->
     <div class="modal fade right" id="login" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">

@@ -211,3 +211,24 @@ function openFullscreen(){
 }
 
 
+// $('.file-upload').file_upload();
+
++ function($){
+  'use strict';
+  var dropZone = document.getElementById('drop-zone');
+  dropZone.ondrop = function(e){
+      e.preventDefault();
+      this.className = 'upload-drop-zone dropped';
+      $(this).html("File dropped");
+  }
+
+  dropZone.ondragover = function(){
+      this.className = 'upload-drop-zone drop';
+      return false;
+  }
+  dropZone.ondragleave = function(){
+      this.className = 'upload-drop-zone';
+      return false;
+  }
+  
+}(jQuery);

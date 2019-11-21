@@ -11,6 +11,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
         <script src="script/script.js" defer></script>
     </head>
     <body>
@@ -24,7 +25,6 @@
             </div>
             <div class="col-sm-4 dropdown" id="sudahlogin">
                 <button type="button" class="btn btn-secondary btnlive" ><a href="http://scoresinplay.com/">LIVE SCORES</a></button>
-                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#login" id="login_tab"><a>LOGIN</a></button>
                 <!-- <div class="dropdown"> -->
                     <i class="fa fa-cog dropdown-toggle" data-toggle="dropdown" id="btnsettings"><a href=""></a></i>
                     <ul class="dropdown-menu">
@@ -35,39 +35,51 @@
             </div>
         </div>
         <nav class="navbar">
-            <div class="container-fluid" id="sudahlogin">
+            <div class="container-fluid" >
                 <ul class="nav navbar-nav nav-pills">
                     <li><a href="index.html">HOME</a></li>
-                    
                 </ul>
             </div>
         </nav>
-        <div class="containerStream">
-            <div class="w3-padding fullscreen">
-                <button onclick="openFullscreen()" class="btn btn-secondary">Fullscreen Mode</button>
-                <p><strong>Tip: </strong>Press the "Esc" key to exit full screen</p>
-                <video width="50%" controls id="videobasket">
-                    <source src="video/nbatop10.mp4" type="video/mp4"> 
-                    <source src="video/nbatop10.ogg" type="video/ogg">
-                </video>
-                <div class="w3-margin">
-                    Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more!
 
-                </div>
-            </div>
-        </div>
-        <footer class="page-footer ">
-            <div class="container-fluid ">
-                <div class="row">
-                    <hr class="clearfix w-100 d-md-none pb-3">  
-                    <div class="col-md-6 mt-md-0 mt-3 w3-center">
-                        <h5 class="font-weight-bold">ABOUT</h5>
-                        <p>...</p>
+        <div class="container w3-margin w3-padding">
+            <h2>UPLOAD VIDEO</h2>
+            <div class="well well-lg">
+                <!-- <form class="md-form" action="#">
+                    <div class="file-field">
+                        <div class="btn btn-secondary btn-lg" >
+                        <input type="file">
+                        </div>
                     </div>
-                
-                    <div class="col-md-6 mb-md-0 mb-3 w3-center">
-                        <h5 class="font-weight-bold">CONTACT US</h5>
-                        <div class="row">
+                </form> -->
+                <h3>Upload Your Video</h3>
+                <div class="upload-drop-zone" id="drop-zone">
+                    <h6>Drag and drop you video</h6>
+                </div>
+                <div class="container">
+                    <h3>Description</h3>
+                    <p>The form below contains a textarea for description:</p>
+                    <form>
+                        <div class="form-group">
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+             </div>
+        </div>
+        <footer class="page-footer font-small teal pt-4">
+                <div class="container-fluid text-center text-md-left">
+                  <div class="row">
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                      <h5 class="font-weight-bold">ABOUT</h5>
+                      <p>...</p>
+              
+                    </div>
+                    <div class="col-md-6 mb-md-0 mb-3">
+                      <h5 class="text-uppercase font-weight-bold">CONTACT US</h5>
+                      <div class="row">
                             <div class="col-md-2 w3-margin">
                                 <img src="images/2017730007.JPG" class="img-circle foto-footer" alt="Ignatius Michael Liondy">
                             </div>
@@ -78,8 +90,8 @@
                             <div class="col-md-2 w3-margin">
                                 <h6>michaelliondy05@gmail.com</h6>
                             </div>
-                        </div>
-                        <div class="row">
+                      </div>
+                      <div class="row">
                             <div class="col-md-2 w3-margin">
                                 <img src="images/2017730030.JPG" class="img-circle foto-footer" alt="Friska Christiana">
                             </div>
@@ -90,14 +102,17 @@
                             <div class="col-md-2 w3-margin">
                                 <h6>christianafriska@gmail.com</h6>
                             </div>
-                        </div>
+                      </div>
+                      
                     </div>
+              
+                  </div>
                 </div>
-            </div>
-            <!-- Copyright -->
-            <div class="footer-copyright text-center w3-margin">
-                <h6>© 2018 Copyright</h6>
-            </div>
-        </footer>
+                <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                  <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+              
+              </footer>
     </body>
 </html>
