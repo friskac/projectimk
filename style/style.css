@@ -56,9 +56,9 @@ img.logo {
     margin-top: 50px;
     margin-left: 10px;
     size: 10px;
+    float: right;
     color: white;
     cursor: pointer;
-    visibility: hidden;
 }
 
 .inputsearch {

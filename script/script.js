@@ -69,20 +69,6 @@ function showCont(id) {
 }
 
 //login
-var input = document.getElementById("pwd");
-
-// Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function (event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("berhasilLogin").click();
-  }
-});
-
-
 function login() {
   if (validateLogin() == true) {
     var username = document.getElementById('uname').value;
@@ -177,8 +163,6 @@ function showTime() {
   var time = h + ":" + m + ":" + s + " " + session;
   document.getElementById("time").innerText = time;
   document.getElementById("time").textContent = time;
-  document.getElementById("times").innerText = time;
-  document.getElementById("times").textContent = time;
 
   setTimeout(showTime, 1000);
 
