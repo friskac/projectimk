@@ -59,6 +59,7 @@ img.logo {
     float: right;
     color: white;
     cursor: pointer;
+    visibility: hidden;
 }
 
 .inputsearch {
@@ -186,6 +187,7 @@ div.container {
     height: 100%;
     margin: auto;
     overflow: hidden;
+    cursor: pointer;
 }
 
 ol.carousel-indicators {
@@ -221,6 +223,10 @@ footer {
     background-color: rgb(49, 50, 61);
     color: white;
     font-family: 'Lucida Sans Regular';
+}
+
+.for-upload{
+    background-color: white;
 }
 
 .judul {
