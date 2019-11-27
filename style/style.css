@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -17,8 +17,8 @@ img.logo {
 }
 
 
-#myInput{
-    width: 20%;   
+#myInput {
+    width: 20%;
     margin-top: 5px;
     margin-left: 25px;
     padding: 10px;
@@ -27,11 +27,11 @@ img.logo {
 
 }
 
-#login_tab{
+#login_tab {
     margin-top: 40px;
 }
 
-.btnlive{
+.btnlive {
     position: relative;
     background-color: white;
     color: rgb(49, 50, 61);
@@ -41,24 +41,24 @@ img.logo {
     margin-top: 40px;
     margin-left: 40%;
     padding: 36px;
-    
+
 }
 
-.btnlive:hover{
+.btnlive:hover {
     background-color: rgb(49, 50, 61);
     color: white;
     border-radius: 15px;
     transition: all 0.5s ease 0s;
 }
 
-#btnsettings{
+#btnsettings {
     position: absolute;
     margin-top: 50px;
     margin-left: 10px;
     size: 10px;
     color: white;
-    float: right;
     cursor: pointer;
+    visibility: hidden;
 }
 
 .inputsearch {
@@ -72,7 +72,7 @@ img.logo {
     background-color: white;
     color: rgb(49, 50, 61);
     border-radius: 5px;
-    left: 260px;
+    left: 373px;
     top: 8px;
 }
 
@@ -162,7 +162,7 @@ label {
     color: black;
 }
 
-canvas#captcha{
+canvas#captcha {
     background-color: white;
     padding: 2px;
     border-radius: 2px;
@@ -183,7 +183,7 @@ div.container {
 #Carousel8,
 #Carousel9,
 #Carousel10 {
-    height: 600px;
+    height: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -201,7 +201,7 @@ footer {
     padding: 10px;
 }
 
-.foto-footer{
+.foto-footer {
     width: 100px;
     height: 100px;
     display: inline;
@@ -213,7 +213,7 @@ footer {
 }
 
 /* football */
-.football{
+.football {
     background-size: cover;
 }
 
@@ -232,11 +232,11 @@ footer {
 
 }
 
-.panel-group{
+.panel-group {
     padding: 24px;
 }
 
-.panel-body a{
+.panel-body a {
     color: rgb(49, 50, 61);
     margin: 16px;
 }
@@ -292,13 +292,13 @@ footer {
 }
 
 .sporttv,
-.baskettv{
+.baskettv {
     width: 100px;
     height: 100px;
     margin: 24px;
 }
 
-.teamstv{
+.teamstv {
     width: 200px;
     height: 100px;
     margin: 24px;
@@ -314,7 +314,7 @@ footer {
     color: black;
 }
 
-#profil{
+#profil {
     color: white;
     display: inline;
     position: absolute;
@@ -322,38 +322,38 @@ footer {
 }
 
 /* stream  */
-.containerStream{
+.containerStream {
     background-color: #c9d1d3;
 }
 
 /* upload */
-.well{
+.well {
     width: 60%;
 }
 
-.upload-drop-zone{
-	height: 200px;
-	width: 50%;
-	border-width: 2px;
-	margin-bottom: 20px;
-	color: #ccc;
-	border-style: dashed;
-	border-color: #ccc;
-	line-height: 150px;
-	text-align: center;
+.upload-drop-zone {
+    height: 200px;
+    width: 50%;
+    border-width: 2px;
+    margin-bottom: 20px;
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 150px;
+    text-align: center;
 }
 
 .upload-drop-zone.drop {
-	color: #222;
-	border-color: #222;
+    color: #222;
+    border-color: #222;
 }
 
 .upload-drop-zone.dropped {
-	color: black;
-	border-color: forestgreen;
+    color: black;
+    border-color: forestgreen;
 }
 
-.btn-lg{
+.btn-lg {
     background-color: rgb(49, 50, 61);
     color: white;
 }

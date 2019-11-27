@@ -16,9 +16,9 @@
     <script src="script/script.js" defer></script>
 </head>
 
-<body onload="createCaptcha()" >
+<body onload="createCaptcha()">
     <div class="row">
-        <div class="col-sm-4" id="web_clock" >
+        <div class="col-sm-4" id="web_clock">
             <span>Website Clock : </span>
             <span id="time" class="clock" onload="showTime()"></span>
         </div>
@@ -26,20 +26,21 @@
             <img src="images/Logo.png" alt="iFirstRow" class="logo">
         </div>
         <div class="col-sm-4 dropdown" id="sudahlogin">
-            <button type="button" class="btn btn-secondary btnlive" ><a href="http://scoresinplay.com/">LIVE SCORES</a></button>
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#login" id="login_tab"><a>LOGIN</a></button>
+            <button type="button" class="btn btn-secondary btnlive"><a href="http://scoresinplay.com/">LIVE
+                    SCORES</a></button>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#login"
+                id="login_tab"><a>LOGIN</a></button>
             <!-- <div class="dropdown"> -->
-                <i class="fa fa-cog dropdown-toggle" data-toggle="dropdown" id="btnsettings"><a href=""></a></i>
-                <ul class="dropdown-menu">
-                    <li><a href="">LOGOUT</a></li>
-                    <li><a href="upload.html">UPLOAD VIDEO</a></li>
-                </ul>
+            <i class="fa fa-cog dropdown-toggle" data-toggle="dropdown" id="btnsettings"><a href=""></a></i>
+            <ul class="dropdown-menu">
+                <li><a href="">LOGOUT</a></li>
+                <li><a href="upload.html">UPLOAD VIDEO</a></li>
+            </ul>
             <!-- </div> -->
-            
         </div>
     </div>
     <nav class="navbar">
-        <div class="container-fluid" >
+        <div class="container-fluid">
             <ul class="nav navbar-nav nav-pills">
                 <li class="tablink active" onclick="openContent(this,'home')"><a>HOME</a></li>
                 <li class="tablink" onclick="openContent(this,'football')"><a>FOOTBALL</a></li>
@@ -54,7 +55,6 @@
                 <li class="tablink" onclick="openContent(this,'channels')"><a>CHANNELS</a></li>
             </ul>
             <input type="text" id="myInput" placeholder="Search..." name="search" class="inputsearch form-control">
-            <button type="submit" class="btnsearch"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
     </nav>
 
@@ -70,16 +70,16 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href=""><img src="images/home1.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/home1.png" alt="" style="width: 100%;"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/home2.jpg" alt="" style="width: 100%;"></a>
+                        <a href="stream.html"><img src="images/home2.jpg" alt="" style="width: 100%;"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/home3.jpg" alt="" style="width: 100%;"></a>
+                        <a href="stream.html"><img src="images/home3.jpg" alt="" style="width: 100%;"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/home4.png" alt="" style="width: 100%;"></a>
+                        <a href="stream.html"><img src="images/home4.png" alt="" style="width: 100%;"></a>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#Carousel" data-slide="prev">
@@ -89,12 +89,12 @@
                 <a class="right carousel-control" href="#Carousel" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
-                </a> 
+                </a>
             </div>
         </div>
     </div>
 
-<!-- football  -->
+    <!-- football  -->
     <div id="football" class="tabs" style="display: none;">
         <h2 class="judul">FOOTBALL</h2>
         <div class="container">
@@ -107,16 +107,16 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href=""><img src="images/MULiv.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/MULiv.jpg" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/chebrighton.jpg" alt="" style="width: 100%;"></a>
+                        <a href="stream.html"><img src="images/chebrighton.jpg" alt="" style="width: 100%;"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/sotonlei.jpg" alt="" style="width: 100%;"></a>
+                        <a href="stream.html"><img src="images/sotonlei.jpg" alt="" style="width: 100%;"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/citywatford.jpg" alt="" style="width: 100%;"></a>
+                        <a href="stream.html"><img src="images/citywatford.jpg" alt="" style="width: 100%;"></a>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#Carousel2" data-slide="prev">
@@ -128,140 +128,152 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="inner-container" >
+            <div class="inner-container">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football1" id="myList" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 ESPN</a>
+                                <a href="#football1" id="myList" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 ESPN</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse in" id="football1">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">ESPN</a>
-                                <a href="">ESPNU</a>
-                                <a href="">HD Link</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">ESPN</a>
+                                <a href="stream.html">ESPNU</a>
+                                <a href="stream.html">HD Link</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football2" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 Sky Sports News</a>
+                                <a href="#football2" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 Sky Sports News</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football2">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football3" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 Premier League</a>
+                                <a href="#football3" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 Premier League</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football3">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1 SP1</a>
-                                <a href="">Link 2 SP2</a>
-                                <a href="">Link 3 SP3</a>
-                                <a href="">Link 4 SP4</a>
-                                <a href="">Link 5 SP5</a>
-                                <a href="">Link 6 BTV1</a>
-                                <a href="">Link 7 Euro1</a>
-                                <a href="">HD Link</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1 SP1</a>
+                                <a href="stream.html">Link 2 SP2</a>
+                                <a href="stream.html">Link 3 SP3</a>
+                                <a href="stream.html">Link 4 SP4</a>
+                                <a href="stream.html">Link 5 SP5</a>
+                                <a href="stream.html">Link 6 BTV1</a>
+                                <a href="stream.html">Link 7 Euro1</a>
+                                <a href="stream.html">HD Link</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football4" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 MUTV - Manchester United TV</a>
+                                <a href="#football4" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 MUTV - Manchester
+                                    United TV</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football4">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">HD Link</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">HD Link</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football5" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 Chelsea TV</a>
+                                <a href="#football5" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 Chelsea TV</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football5">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">HD Link</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">HD Link</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football6" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 LFC TV - Liverpool FC TV</a>
+                                <a href="#football6" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 LFC TV - Liverpool FC
+                                    TV</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football6">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">HD Link</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">HD Link</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football7" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 UEFA Europe League</a>
+                                <a href="#football7" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 UEFA Europe League</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football7">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Euro Sport</a>
-                                <a href="">Euro Sport 2</a>
-                                <a href="">HD Link</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Euro Sport</a>
+                                <a href="stream.html">Euro Sport 2</a>
+                                <a href="stream.html">HD Link</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football8" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 UEFA Champions League</a>
+                                <a href="#football8" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 UEFA Champions
+                                    League</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football8">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#football9" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 BTSports</a>
+                                <a href="#football9" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 BTSports</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="football9">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">BT SPORTS 1</a>
-                                <a href="">BT SPORTS 2</a>
-                                <a href="">BT SPORTS 3</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">BT SPORTS 1</a>
+                                <a href="stream.html">BT SPORTS 2</a>
+                                <a href="stream.html">BT SPORTS 3</a>
                             </div>
                         </div>
                     </div>
@@ -283,16 +295,16 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href=""><img src="images/bb1.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/bb1.png" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/bb2.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/bb2.png" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/bb3.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/bb3.png" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/bb4.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/bb4.png" alt="" style="width: 100%"></a>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#Carousel4" data-slide="prev">
@@ -304,146 +316,165 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="inner-container" >
+            <div class="inner-container">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball1" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 NBA TV</a>
+                                <a href="#basketball1" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 NBA TV</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse in" id="basketball1">
                             <div class="panel-body">
                                 <a href="stream.html">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
-                                <a href="">Link 3</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
+                                <a href="stream.html">Link 3</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball2" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 08 : 00 Golden State Warrios vs New Orleans Pelicans</a>
+                                <a href="#basketball2" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 08 : 00 Golden State Warrios vs
+                                    New Orleans Pelicans</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="basketball2">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball3" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 08 : 00 Cleveland Cavaliers vs Milwaukee Bucks</a>
+                                <a href="#basketball3" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 08 : 00 Cleveland Cavaliers vs
+                                    Milwaukee Bucks</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="basketball3">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball4" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 08 : 00 Oklahoma City Thunder vs Houston Rockets</a>
+                                <a href="#basketball4" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 08 : 00 Oklahoma City Thunder
+                                    vs Houston Rockets</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="basketball4">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball5" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 08 : 30 Portland Trail Blazers vs San Antonio Spurs</a>
+                                <a href="#basketball5" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 08 : 30 Portland Trail Blazers
+                                    vs San Antonio Spurs</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="basketball5">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball6" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 10 : 00 Denver Nuggets vs Sacramento Kings</a>
+                                <a href="#basketball6" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 10 : 00 Denver Nuggets vs
+                                    Sacramento Kings</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="basketball6">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball7" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 10 : 00 Utah Jazz vs Phoenix Suns</a>
+                                <a href="#basketball7" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 10 : 00 Utah Jazz vs Phoenix
+                                    Suns</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="basketball7">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball8" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 10 : 30 Charlotte Hornets vs Los Angeles Clippers</a>
+                                <a href="#basketball8" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 10 : 30 Charlotte Hornets vs
+                                    Los Angeles Clippers</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="basketball8">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball9" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 07 : 00 PM Enisey Krasnoyarsk 2 vs Avtodor Saratov 2</a>
+                                <a href="#basketball9" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 07 : 00 PM Enisey Krasnoyarsk 2
+                                    vs Avtodor Saratov 2</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="basketball9">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#basketball10" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 08 : 00 PM MBA Moscow 2 vs UNICS Kazan 2</a>
+                                <a href="#basketball10" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 08 : 00 PM MBA Moscow 2 vs
+                                    UNICS Kazan 2</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="basketball10">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
@@ -464,10 +495,10 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href=""><img src="images/hockey1.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/hockey1.jpg" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/hockey1.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/hockey1.png" alt="" style="width: 100%"></a>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#Carousel5" data-slide="prev">
@@ -479,17 +510,18 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="inner-container" >
+            <div class="inner-container">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#rugby1" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> No games scheduled today</a>
+                                <a href="#rugby1" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> No games scheduled today</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse in" id="rugby1">
                             <div class="panel-body">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -513,22 +545,22 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href=""><img src="images/hockey1.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/hockey1.jpg" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/hockey1.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/hockey1.png" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/hockey2-1.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/hockey2-1.jpg" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/hockey2-2.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/hockey2-2.png" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/hockey3-1.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/hockey3-1.jpg" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/hockey3-2.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/hockey3-2.png" alt="" style="width: 100%"></a>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#Carousel6" data-slide="prev">
@@ -540,61 +572,69 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="inner-container" >
+            <div class="inner-container">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#icehockey1" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 07 : 01 Chicago Blackhawks vs Nashville Predators</a>
+                                <a href="#icehockey1" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 07 : 01 Chicago Blackhawks vs
+                                    Nashville Predators</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse in" id="icehockey1">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#icehockey2" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 07 : 30 Minnesota Wild vs Dallas Stars</a>
+                                <a href="#icehockey2" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 07 : 30 Minnesota Wild vs
+                                    Dallas Stars</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="icehockey2">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#icehockey3" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 09 : 00 Winnipeg Jets vs Anaheim Ducks</a>
+                                <a href="#icehockey3" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 09 : 00 Winnipeg Jets vs
+                                    Anaheim Ducks</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="icehockey1">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#icehockey4" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 07 : 30 PM Sibir Novosibirsk vs Yekaterinburg</a>
+                                <a href="#icehockey4" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 07 : 30 PM Sibir Novosibirsk vs
+                                    Yekaterinburg</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="icehockey4">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
-                                <a href="">Link 2</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
+                                <a href="stream.html">Link 2</a>
                             </div>
                         </div>
                     </div>
@@ -645,17 +685,18 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div> -->
-            <div class="inner-container" >
+            <div class="inner-container">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#olympics" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> No games scheduled today</a>
+                                <a href="#olympics" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> No games scheduled today</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse in" id="olympics">
                             <div class="panel-body">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -676,13 +717,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href=""><img src="images/bx.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/bx.jpg" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/bx2.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/bx2.jpg" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/bx3.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/bx3.png" alt="" style="width: 100%"></a>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#Carousel8" data-slide="prev">
@@ -694,44 +735,49 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="inner-container" >
+            <div class="inner-container">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#boxing1" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 WWE Network</a>
+                                <a href="#boxing1" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 WWE Network</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse in" id="boxing1">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#boxing2" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 08 : 00 WWE Friday Night SamckDown</a>
+                                <a href="#boxing2" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 08 : 00 WWE Friday Night
+                                    SmackDown</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="boxing2">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#boxing3" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 10 : 00 Xavier Martinez vs Jessie Cris Rosales</a>
+                                <a href="#boxing3" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 10 : 00 Xavier Martinez vs
+                                    Jessie Cris Rosales</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="boxing3">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
@@ -752,13 +798,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href=""><img src="images/ten1.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/ten1.jpg" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/ten2.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/ten2.png" alt="" style="width: 100%"></a>
                     </div>
                     <div class="item">
-                        <a href=""><img src="images/ten3.png" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/ten3.png" alt="" style="width: 100%"></a>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#Carousel9" data-slide="prev">
@@ -770,44 +816,50 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="inner-container" >
+            <div class="inner-container">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#tennis1" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 05 : 30 PM Kenin vs Svitolina (WTA Finals Shenzhen)</a>
+                                <a href="#tennis1" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 05 : 30 PM Kenin vs Svitolina
+                                    (WTA Finals Shenzhen)</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse in" id="tennis1">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#tennis2" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 07 : 00 PM Ka. Pliskova vs Halep (WTA Final Shenzhen</a>
+                                <a href="#tennis2" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 07 : 00 PM Ka. Pliskova vs
+                                    Halep (WTA Final Shenzhen</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="tennis2">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#tennis3" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 08 : 00 PM Garin vs Dimitrov</a>
+                                <a href="#tennis3" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 08 : 00 PM Garin vs
+                                    Dimitrov</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="tennis3">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
@@ -830,7 +882,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href=""><img src="images/baseball1.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/baseball1.jpg" alt="" style="width: 100%"></a>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#Carousel10" data-slide="prev">
@@ -842,18 +894,19 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="inner-container" >
+            <div class="inner-container">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#tennis1" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 MLB Network</a>
+                                <a href="#tennis1" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 MLB Network</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse in" id="tennis1">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
@@ -874,7 +927,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href=""><img src="images/motos1.jpg" alt="" style="width: 100%"></a>
+                        <a href="stream.html"><img src="images/motos1.jpg" alt="" style="width: 100%"></a>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#Carousel11" data-slide="prev">
@@ -886,57 +939,64 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="inner-container" >
+            <div class="inner-container">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#ms1" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 Malaysian Grand Prix 2019</a>
+                                <a href="#ms1" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 Malaysian Grand Prix
+                                    2019</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse in" id="ms1">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#ms2" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 00 : 00 Sky Sports F1</a>
+                                <a href="#ms2" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 00 : 00 Sky Sports F1</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="ms2">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#ms3" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 08 : 00 Moto3 - Malaysian Grand Prix</a>
+                                <a href="#ms3" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 08 : 00 Moto3 - Malaysian Grand
+                                    Prix</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="ms3">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
-                                <a href="#ms3" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-television" aria-hidden="true"></i> 09 : 50 MotoGP - Malaysian Grand Prix 2019</a>
+                                <a href="#ms3" data-toggle="collapse" data-parent="#accordion"><i
+                                        class="fa fa-television" aria-hidden="true"></i> 09 : 50 MotoGP - Malaysian
+                                    Grand Prix 2019</a>
                             </h5>
                         </div>
                         <div class="panel-collapse collapse" id="ms3">
                             <div class="panel-body">
-                                <a href="">HD Stream Watch Now</a>
-                                <a href="">Link 1</a>
+                                <a href="stream.html">HD Stream Watch Now</a>
+                                <a href="stream.html">Link 1</a>
                             </div>
                         </div>
                     </div>
@@ -945,7 +1005,7 @@
         </div>
     </div>
 
-    
+
 
     <div id="channels" class="tabs" style="display: none;">
         <h2 class="judul">CHANNELS</h2>
@@ -954,12 +1014,15 @@
             <div id="sports" class="w3-hide w3-container">
                 <table>
                     <tr>
-                        <td><a href=""><img src="images/espn.png" alt="ESPN" class="sporttv"></a></td>
-                        <td><a href=""><img src="images/skysports.jpg" alt="Sky Sports" class="sporttv"></a></td>
-                        <td><a href=""><img src="images/xone.jpg" alt="XONE" class="sporttv"></a></td>
-                        <td><a href=""><img src="images/euros.png" alt="Euro Sports" class="sporttv"></a></td>
-                        <td><a href=""><img src="images/btsport.jpg" alt="BT Sports" class="sporttv"></a></td>
-                        <td><a href=""><img src="images/nfl.jpg" alt="NFL Network" class="sporttv"></a></td>
+                        <td><a href="stream.html"><img src="images/espn.png" alt="ESPN" class="sporttv"></a></td>
+                        <td><a href="stream.html"><img src="images/skysports.jpg" alt="Sky Sports" class="sporttv"></a>
+                        </td>
+                        <td><a href="stream.html"><img src="images/xone.jpg" alt="XONE" class="sporttv"></a></td>
+                        <td><a href="stream.html"><img src="images/euros.png" alt="Euro Sports" class="sporttv"></a>
+                        </td>
+                        <td><a href="stream.html"><img src="images/btsport.jpg" alt="BT Sports" class="sporttv"></a>
+                        </td>
+                        <td><a href="stream.html"><img src="images/nfl.jpg" alt="NFL Network" class="sporttv"></a></td>
                     </tr>
                 </table>
             </div>
@@ -967,9 +1030,10 @@
             <div id="teams" class="w3-hide w3-container">
                 <table>
                     <tr>
-                        <td><a href=""><img src="images/mutv.png" alt="MU TV" class="teamstv"></a></td>
-                        <td><a href=""><img src="images/chelseatv.jpeg" alt="CHELSEA TV" class="teamstv"></a></td>
-                        <td><a href=""><img src="images/lfctv.jpeg" alt="LFC TV" class="teamstv"></a></td>
+                        <td><a href="stream.html"><img src="images/mutv.png" alt="MU TV" class="teamstv"></a></td>
+                        <td><a href="stream.html"><img src="images/chelseatv.jpeg" alt="CHELSEA TV" class="teamstv"></a>
+                        </td>
+                        <td><a href="stream.html"><img src="images/lfctv.jpeg" alt="LFC TV" class="teamstv"></a></td>
                     </tr>
                 </table>
             </div>
@@ -977,7 +1041,7 @@
             <div id="basket" class="w3-hide w3-container">
                 <table>
                     <tr>
-                        <td><a href=""><img src="images/nbl.jpg" alt="NBL TV" class="baskettv"></a></td>
+                        <td><a href="stream.html"><img src="images/nbl.jpg" alt="NBL TV" class="baskettv"></a></td>
                     </tr>
                 </table>
             </div>
@@ -1047,4 +1111,5 @@
         </div>
     </div>
 </body>
+
 </html>

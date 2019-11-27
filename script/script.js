@@ -1,9 +1,10 @@
 var code;
+
 function createCaptcha() {
   //clear the contents of captcha div first 
   document.getElementById('captcha').innerHTML = "";
   var charsArray =
-  "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*";
+    "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@!#$%^&*";
   var lengthOtp = 6;
   var captcha = [];
   for (var i = 0; i < lengthOtp; i++) {
@@ -26,6 +27,7 @@ function createCaptcha() {
 }
 
 var validCaptcha = false;
+
 function validateCaptcha() {
   event.preventDefault();
   debugger
@@ -33,7 +35,7 @@ function validateCaptcha() {
     validCaptcha = true;
     var element = document.getElementById("form_captcha");
     element.parentNode.removeChild(element);
-  }else{
+  } else {
     alert("Invalid Captcha. try Again");
   }
 }
@@ -41,99 +43,103 @@ function validateCaptcha() {
 
 // tablink
 
-function openContent(obj, idContentContainer){
+function openContent(obj, idContentContainer) {
   var i, x, tablinks;
 
   x = document.getElementsByClassName("tabs");
-  for(i = 0; i < x.length; i++){
-      x[i].style.display = "none";
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
 
   tablinks = document.getElementsByClassName("tablink");
-  for(i = 0; i < tablinks.length ; i++){
-      tablinks[i].className = tablinks[i].className.replace("active", "");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("active", "");
   }
   document.getElementById(idContentContainer).style.display = "block";
   obj.className += " active";
 }
 
-function showCont(id){
+function showCont(id) {
   var x = document.getElementById(id);
-  if(x.className.indexOf("w3-show") == -1){
-      x.className += " w3-show";
-  }
-  else{
-      x.className = x.className.replace(" w3-show", "");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
   }
 }
 
-
 //login
+var input = document.getElementById("pwd");
 
-function login(){
-  console.log("masuk");
-  if(validateLogin()==true){
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function (event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("berhasilLogin").click();
+  }
+});
+
+
+function login() {
+  if (validateLogin() == true) {
     var username = document.getElementById('uname').value;
     var p = document.getElementById('sudahLogin');
     var element = document.getElementById('login_tab');
     element.parentNode.removeChild(element);
     var node = document.createElement("p");
-    node.setAttribute('id',"profil");
-    var textnode = document.createTextNode("Hello, "+username);
+    node.setAttribute('id', "profil");
+    var textnode = document.createTextNode("Hello, " + username);
     node.appendChild(textnode);
     document.getElementById("sudahlogin").appendChild(node);
-  }
-  else{
+    document.getElementById("btnsettings").style.visibility = "visible";
+  } else {
     alert("Please enter a valid login information");
+    document.getElementById("btnsettings").style.display = "none";
   }
 }
 
-function validateLogin(){
+function validateLogin() {
   var username = document.getElementById('uname').value;
   var password = document.getElementById('pwd').value;
-  if(username!="" && password!=""){
-    document.getElementById("berhasilLogin").setAttribute("data-dismiss","modal");
+  if (username != "" && password != "") {
+    document.getElementById("berhasilLogin").setAttribute("data-dismiss", "modal");
     return true;
   }
   return false;
 }
 
 //register
-function verifyRegister(){
+function verifyRegister() {
   var username = document.getElementById("userRegister").value;
   var email = document.getElementById("emailRegister").value;
   var password = document.getElementById("passRegister").value;
   var verifyPass = document.getElementById("verifyPass").value;
-  if(username=="" && email=="" && password=="" && verifyPass=="" && validCaptcha==false){
+  if (username == "" && email == "" && password == "" && verifyPass == "" && validCaptcha == false) {
     alert("Please register yourself");
-  }
-  else if(username==""){
+  } else if (username == "") {
     alert("Please enter your username");
-  }
-  else if(email==""){
+  } else if (email == "") {
     alert("Please enter a valid email address");
-  }
-  else if(password==""){
+  } else if (password == "") {
     alert("Please enter your password");
-  }
-  else if(verifyPass==""){
+  } else if (verifyPass == "") {
     alert("Please confirm your password");
-  }
-  else if(password!=verifyPass){
+  } else if (password != verifyPass) {
     alert("Password doesn't match");
-  }
-  else if(validCaptcha==false){
+  } else if (validCaptcha == false) {
     alert("Please Submit Captcha");
-  }
-  else{
-    document.getElementById("berhasilRegister").setAttribute("data-dismiss","modal");
+  } else {
+    document.getElementById("berhasilRegister").setAttribute("data-dismiss", "modal");
     alert("Welcome to IFirstRow Sports! Enjoy!");
-    document.getElementById("userRegister").value="";
-    document.getElementById("emailRegister").value="";
-    document.getElementById("passRegister").value="";
-    var verifyPass = document.getElementById("verifyPass").value="";
-    addElement("captchaField","form","form_captcha","<div id='captcha'></div><input type='text' placeholder='Captcha' id='captchaTextBox'><i onclick='createCaptcha()' class='fa fa-refresh' aria-hidden='true'></i><input type='submit' class='btn btn-secondary btn_submit' value='SUBMIT'>");
-    document.getElementById("form_captcha").setAttribute("onsubmit","validateCaptcha()");
+    document.getElementById("userRegister").value = "";
+    document.getElementById("emailRegister").value = "";
+    document.getElementById("passRegister").value = "";
+    var verifyPass = document.getElementById("verifyPass").value = "";
+    addElement("captchaField", "form", "form_captcha", "<div id='captcha'></div><input type='text' placeholder='Captcha' id='captchaTextBox'><i onclick='createCaptcha()' class='fa fa-refresh' aria-hidden='true'></i><input type='submit' class='btn btn-secondary btn_submit' value='SUBMIT'>");
+    document.getElementById("form_captcha").setAttribute("onsubmit", "validateCaptcha()");
     createCaptcha();
   }
 }
@@ -148,64 +154,64 @@ function addElement(parentId, elementTag, elementId, html) {
 }
 
 //time
-function showTime(){
+function showTime() {
   var date = new Date();
-  var h = date.getHours(); 
-  var m = date.getMinutes(); 
-  var s = date.getSeconds(); 
+  var h = date.getHours();
+  var m = date.getMinutes();
+  var s = date.getSeconds();
   var session = "AM";
-  
-  if(h == 0){
-      h = 12;
+
+  if (h == 0) {
+    h = 12;
   }
-  
-  if(h > 12){
-      h = h - 12;
-      session = "PM";
+
+  if (h > 12) {
+    h = h - 12;
+    session = "PM";
   }
-  
+
   h = (h < 10) ? "0" + h : h;
   m = (m < 10) ? "0" + m : m;
   s = (s < 10) ? "0" + s : s;
-  
+
   var time = h + ":" + m + ":" + s + " " + session;
   document.getElementById("time").innerText = time;
   document.getElementById("time").textContent = time;
-  
+  document.getElementById("times").innerText = time;
+  document.getElementById("times").textContent = time;
+
   setTimeout(showTime, 1000);
-  
+
 }
 
 showTime();
 
 // search bar
-$('#myInput').keyup(function(){
+$('#myInput').keyup(function () {
   var valThis = $(this).val().toLowerCase();
-      if(valThis == ""){
-          $('.panel').show();
-          $('div.carousel').show();
-      } else {
-          $('.panel').each(function(){
-          var text = $(this).find("a").text().toLowerCase();
-          $('div.carousel').hide();
-          (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
-      });
+  if (valThis == "") {
+    $('.panel').show();
+    $('div.carousel').show();
+  } else {
+    $('.panel').each(function () {
+      var text = $(this).find("a").text().toLowerCase();
+      $('div.carousel').hide();
+      (text.indexOf(valThis) >= 0) ? $(this).show(): $(this).hide();
+    });
   };
 });
 
 // videobasket
 var elem = document.getElementById("videobasket");
-function openFullscreen(){
-  if(elem.requestFullscreen){
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
     elem.requestFullscreen();
-  }
-  else if(elem.mozRequestFullScreen){//firefox
+  } else if (elem.mozRequestFullScreen) { //firefox
     elem.mozRequestFullScreen();
-  }
-  else if(elem.webkitRequestFullscreen){//chrome 
+  } else if (elem.webkitRequestFullscreen) { //chrome 
     elem.webkitRequestFullscreen();
-  }
-  else if (elem.msRequestFullscreen){//edge
+  } else if (elem.msRequestFullscreen) { //edge
     elem.msRequestFullscreen();
   }
 }
@@ -213,22 +219,23 @@ function openFullscreen(){
 
 // $('.file-upload').file_upload();
 
-+ function($){
++
+function ($) {
   'use strict';
   var dropZone = document.getElementById('drop-zone');
-  dropZone.ondrop = function(e){
-      e.preventDefault();
-      this.className = 'upload-drop-zone dropped';
-      $(this).html("File dropped");
+  dropZone.ondrop = function (e) {
+    e.preventDefault();
+    this.className = 'upload-drop-zone dropped';
+    $(this).html("File dropped");
   }
 
-  dropZone.ondragover = function(){
-      this.className = 'upload-drop-zone drop';
-      return false;
+  dropZone.ondragover = function () {
+    this.className = 'upload-drop-zone drop';
+    return false;
   }
-  dropZone.ondragleave = function(){
-      this.className = 'upload-drop-zone';
-      return false;
+  dropZone.ondragleave = function () {
+    this.className = 'upload-drop-zone';
+    return false;
   }
-  
+
 }(jQuery);
