@@ -59,6 +59,10 @@ function openContent(obj, idContentContainer) {
   obj.className += " active";
 }
 
+function activate(idContent){
+  document.getElementsByClassName(idContent)[0].className+= " active";
+}
+
 function showCont(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-hide") == -1) {

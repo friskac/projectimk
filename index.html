@@ -43,14 +43,14 @@
         <div class="container-fluid">
             <ul class="nav navbar-nav nav-pills">
                 <li class="tablink active" onclick="openContent(this,'home')"><a>HOME</a></li>
-                <li class="tablink" onclick="openContent(this,'football')"><a>FOOTBALL</a></li>
-                <li class="tablink" onclick="openContent(this,'basketball')"><a>BASKETBALL</a></li>
+                <li class="tablink football_tablink" onclick="openContent(this,'football')"><a>FOOTBALL</a></li>
+                <li class="tablink basketball_tablink" onclick="openContent(this,'basketball')"><a>BASKETBALL</a></li>
                 <li class="tablink" onclick="openContent(this,'rugby')"><a>RUGBY</a></li>
-                <li class="tablink" onclick="openContent(this,'icehockey')"><a>ICE HOCKEY</a></li>
+                <li class="tablink icehockey_tablink" onclick="openContent(this,'icehockey')"><a>ICE HOCKEY</a></li>
                 <li class="tablink" onclick="openContent(this,'olympics')"><a>OLYMPICS</a></li>
                 <li class="tablink" onclick="openContent(this,'boxing')"><a>BOXING</a></li>
                 <li class="tablink" onclick="openContent(this,'tennis')"><a>TENNIS</a></li>
-                <li class="tablink" onclick="openContent(this,'baseball')"><a>BASEBALL</a></li>
+                <li class="tablink baseball_tablink" onclick="openContent(this,'baseball')"><a>BASEBALL</a></li>
                 <li class="tablink" onclick="openContent(this,'motosport')"><a>MOTOSPORT</a></li>
                 <li class="tablink" onclick="openContent(this,'channels')"><a>CHANNELS</a></li>
             </ul>
@@ -70,19 +70,18 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a onclick="openContent(this,'stream')"><img src="images/home1.png" alt=""
+                        <a onclick="openContent(this,'football');activate('football_tablink')"><img src="images/home1.png" alt=""
                                 style="width: 100%;"></a>
                     </div>
                     <div class="item">
-                        <a onclick="openContent(this,'stream')"><img src="images/home2.jpg" alt=""
+                        <a onclick="openContent(this,'baseball');activate('baseball_tablink')"><img src="images/home2.jpg" alt="" style="width: 100%;"></a>
+                    </div>
+                    <div class="item">
+                        <a onclick="openContent(this,'basketball');activate('basketball_tablink')"><img src="images/home3.jpg" alt=""
                                 style="width: 100%;"></a>
                     </div>
                     <div class="item">
-                        <a onclick="openContent(this,'stream')"><img src="images/home3.jpg" alt=""
-                                style="width: 100%;"></a>
-                    </div>
-                    <div class="item">
-                        <a onclick="openContent(this,'stream')"><img src="images/home4.png" alt=""
+                        <a onclick="openContent(this,'icehockey');activate('icehockey_tablink')"><img src="images/home4.png" alt=""
                                 style="width: 100%;"></a>
                     </div>
                 </div>
@@ -1342,7 +1341,7 @@
                     <h5 class="font-weight-bold">CONTACT US</h5>
                     <div class="row">
                         <div class="col-md-2 w3-margin">
-                            <img src="images/2017730007.JPG" class="img-circle foto-footer"
+                            <img src="images/2017730007.jpg" class="img-circle foto-footer"
                                 alt="Ignatius Michael Liondy">
                         </div>
                         <div class="col-md-2 w3-margin">
@@ -1355,7 +1354,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2 w3-margin">
-                            <img src="images/2017730030.JPG" class="img-circle foto-footer" alt="Friska Christiana">
+                            <img src="images/2017730030.jpg" class="img-circle foto-footer" alt="Friska Christiana">
                         </div>
                         <div class="col-md-2 w3-margin">
                             <h6>FRISKA CHRISTIANA</h6>
