@@ -203,6 +203,8 @@ function openFullscreen() {
 
 // $('.file-upload').file_upload();
 
+var dropped = false;
+
 +
 function ($) {
   'use strict';
@@ -211,15 +213,30 @@ function ($) {
     e.preventDefault();
     this.className = 'upload-drop-zone dropped';
     $(this).html("File dropped");
+    dropped = true;
   }
 
   dropZone.ondragover = function () {
     this.className = 'upload-drop-zone drop';
+    dropped = false;
     return false;
   }
   dropZone.ondragleave = function () {
     this.className = 'upload-drop-zone';
+    dropped = false;
     return false;
   }
 
 }(jQuery);
+
+
+function checkUploaded(){
+  if(dropped){
+    openContent(this,'home');
+    alert('File uploaded successfully, the file is being reviewed by Administrator');
+  }
+  else{
+    alert('No files uploaded!');
+  }
+  dropped = false;
+}
