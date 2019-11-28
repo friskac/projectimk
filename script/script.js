@@ -190,9 +190,8 @@ $('#myInput').keyup(function () {
 });
 
 // videobasket
-var elem = document.getElementById("videobasket");
-
-function openFullscreen() {
+elem = document.getElementById("videobasket");
+function openFullscreen(id) {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { //firefox
@@ -202,6 +201,93 @@ function openFullscreen() {
   } else if (elem.msRequestFullscreen) { //edge
     elem.msRequestFullscreen();
   }
+}
+
+function setVideo(vid){
+  var video = document.getElementsByTagName('video')[0];
+  var sources = video.getElementsByTagName('source');
+  sources[0].src = 'video/'+vid+'.mp4';
+  sources[1].src = 'video/'+vid+'.ogg';
+  video.load();
+}
+
+function setSummary(konten){
+  var sum;
+  var judul;
+  if(konten==="unitedliverpool"){
+    judul = "WATCH MANCHESTER UNITED VS LIVERPOOL"
+    sum = "<p><b>Adam Lallana's late equaliser saved a point for an under-par Liverpool as they drew 1-1 at Manchester United on Super Sunday in a game littered with more VAR drama.</b></p>"+
+          "<p>After a frantic opening lacking in clear-cut chances, the game exploded late in the first half with two crucial VAR calls. First, Marcus Rashford gave United the lead from close range (36) as Liverpool's cries for a foul on Divock Origi in the build-up were denied by VAR.</p>"+
+          "<p>Then, as Sadio Mane looked to have equalised (44), VAR correctly ruled the strike out for a handball. Both decisions prompted wild celebrations from the home crowd, but Liverpool, who were looking for a record-equalling 18 straight Premier League wins, levelled late on through sub Lallana's back-post tap in (85).</p>"+
+          "<p>The result moves United into 13th, seven points off the top four, while Liverpool see their lead at the top cut to six points following Manchester City's 2-0 win at Crystal Palace on Sunday.</p>"+
+          "<p>Man Utd: De Gea (7), Wan-Bissaka (6), Young (6), Rojo (6), Lindelof (6), Maguire (7), Fred (6), Pereira (7), McTominay (7), James (8), Rashford (8)</p>"+
+          "<p>Subs: Martial (5), Williams (5)</p>"+
+          "<p>Liverpool: Alisson (6), Alexander-Arnold (5), Robertson (6), Matip (5), Van Dijk (6), Fabinho (5), Wijnaldum (6), Henderson (5), Mane (6), Firmino (6), Origi (5)</p>"+
+          "<p>Subs: Oxlade-Chamberlain (5), Lallana (7), Keita (6)</p>"+
+          "<p><b>Man of the match: Marcus Rashford</b></p>"
+  }
+  else if(konten==="chelseabrighton"){
+    judul = "WATCH CHELSEA VS BRIGHTON"
+    sum = "<p><b>Chelsea claimed their first home Premier League win of the season with a comfortable 2-0 victory over Brighton & Hove Albion.</b></p>"+
+    "<p>The hosts had the better of the first half, Tammy Abraham hitting a post with a header and Ross Barkley and Pedro both being denied by Mat Ryan.</p>"+
+    "<p>Jorginho broke the deadlock five minutes after the break, scoring from the penalty spot after Mason Mount had been brought down by Adam Webster.  </p>"+
+    "<p>Brighton fought back, with Dan Burn hitting the crossbar, but Willian secured the victory with 14 minutes left after a counter-attack led by Callum Hudson-Odoi.</p>"+
+    "<p>Chelsea climb four places to sixth, on 11 points. Brighton drop to 16th with six points, after a six-match winless run.</p>"
+  }
+  else if(konten==="sotonlei"){
+    judul = "WATCH SOUTHAMPTON VS LEICESTER"
+    sum = "<p><b>Leicester City moved up to second with a record-breaking 9-0 win at 10-man Southampton. </b></p>"+
+    "<p>It rained goals at a wet St Mary's Stadium as the fantastic Foxes secured the biggest-ever away win in the Premier League and matched the overall record set when Manchester United beat Ipswich Town 9-0 at home in 1995.</p>"+
+    "<p>Ben Chilwell scored the first after 10 minutes with a goal that involved Saints left-back Ryan Bertrand being retrospectively sent off.</p>"+
+    "<p>Video Assistant Referee Mike Dean determined that Bertrand had committed a serious foul play tackle on Ayoze Perez in the build-up and advised Andre Marriner to issue a red card.</p>"+
+    "<p>Perez scored a hat-trick for the second successive match against Southampton and Jamie Vardy also hit a treble to take his tally for the season to eight.</p>"+
+    "<p>Youri Tielemans was also on target while James Maddison's late free-kick meant Leicester surpassed Man Utd's 8-1 away win at Nottingham Forest in 1999. </p>"+
+    "<p>Vardy's stoppage-time penalty equalled the biggest victory in any Premier League match as Brendan Rodgers' side made history in the opening fixture of Matchweek 10.</p>"
+  }
+  else if(konten==="citywatford"){
+    judul = "WATCH MANCHESTER CITY VS WATFORD"
+    sum = "<p><b>Manchester City scored five goals in a devastating opening 18-minute spell as they responded to their shock defeat at Norwich with an 8-0 demolition of Watford on Saturday.</b></p>"+
+    "<p>David Silva opened the scoring with just 52 seconds on the clock before Sergio Aguero put the champions two up from the penalty spot on seven minutes with his 100th Premier League goal at the Etihad Stadium.</p>"+
+    "<p>City added a third on 12 minutes through a deflected Riyad Mahrez free-kick before Bernardo Silva's stooping header and Nicolas Otamendi's close-range tap-in saw Pep Guardiola's side race into a five-goal lead faster than any side in Premier League history.</p>"
+  }
+  else if(konten==="espn"){
+    judul = "ESPN SPORTS TV"
+    sum = "<p><b>Kemba Walker suffers apparent neck injury vs. Nuggets and leaves on a stretcher | NBA on ESPN</b></p>"
+  }
+  else if(konten==="skysports"){
+    judul = "SKY SPORTS TV"
+    sum = "<p><b>Gary Neville gives his honest opinion on Mourinho's appointment as Spurs manager | MNF</b></p>"
+  }
+  else if(konten==="premierleague"){
+    judul = "PREMIER LEAGUE TV"
+    sum = "<p><b>TOO MUCH SAUCE | Best Premier League Skills MW13 | Ozil, Dele, Sane</b></p>"
+  }
+  else if(konten==="mutv"){
+    judul = "MANCHESTER UNITED TV"
+    sum = "<p><b>Rashford's stunning free kick sends United through! | Chelsea 1-2 Manchester United | Carabao Cup</b></p>"
+  }
+  else if(konten==="chelseatv"){
+    judul = "CHELSEA TV"
+    sum = "<p><b>Southampton 1-4 Chelsea | Abraham & Mount On Target In Big Away Win 🔥| Highlights</b></p>"
+  }
+  else if(konten==="lfctv"){
+    judul = "LIVERPOOL TV"
+    sum = "<p><b>Liverpool 3-1 Man City | Fabinho's stunner helps Reds beat City | Highlights</b></p>"
+  }
+  else if(konten==="europaleague"){
+    judul = "UEFA EUROPA LEAUGE"
+    sum = "<p><b>Highlights | Partizan Belgrade 0-1 Manchester United | UEFA Europa League</b></p>"
+  }
+  else if(konten==="championsleague"){
+    judul = "UEFA CHAMPIONS LEAUGE"
+    sum = "<p><b>Champions League Goals 2019/20 ● Matchday 5 | HD</p>"
+  }
+  else if(konten==="btsport"){
+    judul = "BT SPORT"
+    sum = "<p><b>'Its in our hands, we have to be happy with that' Frank Lampard is happy with a point in Valencia</p>"
+  }
+  document.getElementById("judul").innerHTML = judul;
+  document.getElementById("summary").innerHTML = sum;
 }
 
 
