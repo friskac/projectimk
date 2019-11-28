@@ -260,7 +260,7 @@ function setSummary(konten){
   }
   else if(konten==="premierleague"){
     judul = "PREMIER LEAGUE TV"
-    sum = "<p><b>TOO MUCH SAUCE | Best Premier League Skills MW13 | Ozil, Dele, Sane</b></p>"
+    sum = "<p><b>90-SECOND HIGHLIGHTS: Arsenal 2-2 Southampton | Premier League</b></p>"
   }
   else if(konten==="mutv"){
     judul = "MANCHESTER UNITED TV"
