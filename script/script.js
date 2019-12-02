@@ -283,42 +283,60 @@ function setSummary(konten) {
   } else if (konten === "btsport") {
     judul = "BT SPORT"
     sum = "<p><b>'Its in our hands, we have to be happy with that' Frank Lampard is happy with a point in Valencia</p>"
-  } else if (konten == "nbatv") {
+  } else if (konten === "nbatv") {
     judul = "NBA TV"
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "bb") {
+  } else if (konten === "bb") {
     judul = "WATCH Golden State Warrios vs New Orleans Pelicans"
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "bb1") {
+  } else if (konten === "bb1") {
     judul = "WATCH Cleveland Cavaliers vs Milwaukee Bucks"
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "bb2") {
+  } else if (konten === "bb2") {
     judul = "WATCH Oklahoma City Thunder vs Houston Rockets "
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "bb3") {
+  } else if (konten === "bb3") {
     judul = "WATCH Portland Trail Blazers vs San Antonio Spurs"
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "bb4") {
+  } else if (konten === "bb4") {
     judul = "WATCH Denver Nuggets vs Sacramento Kings"
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "bb5") {
+  } else if (konten === "bb5") {
     judul = "WATCH Utah Jazz vs Phoenix Suns"
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "bb6") {
+  } else if (konten === "bb6") {
     judul = "WATCH Charlotte Hornets vs Los Angeles Clippers "
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "bb7") {
+  } else if (konten === "bb7") {
     judul = "WATCH Enisey Krasnoyarsk 2 vs Avtodor Saratov 2 "
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "bb8") {
+  } else if (konten === "bb8") {
     judul = "WATCH PM MBA Moscow 2 vs UNICS Kazan 2 "
     sum = "<p><b>Check out the top 10 plays of the night from around the league on Nov. 3 featuring Kristaps Porzingis, LeBron James, Kyle Kuzma and more! </b></p > "
-  } else if (konten == "rugby") {
+  } else if (konten === "rugby") {
     judul = "WORLD RUGBY"
     sum = "<p><b>Five massive tackles at Rugby World Cup 2019</b></p>"
-  } else if (konten == "h1") {
+  } else if (konten === "h1") {
     judul = "WATCH ICE HOCKEY GAME"
     sum = "<p><b>Erik Johnson races back to save the empty net</b></p>"
+  } else if (konten === "box") {
+    judul = "WATCH BOXING GAME"
+    sum = "<p><b>Oscar Valdez Gets Off Deck to Knock Out Adam Lopez | Fight Highlights</b></p>"
+  } else if (konten === "tennis") {
+    judul = "WATCH TENNIS GAME"
+    sum = "<p><b>Federer vs Tsonga Amazing Match Point | Australian Open 2014</b></p>"
+  } else if (konten === "baseball") {
+    judul = "WATCH BASEBALL GAME"
+    sum = "<p><b>Belli vs. Yeli: A game of M-V-P (Cody Bellinger vs. Christian Yelich!)</b></p>"
+  } else if (konten === "motospot") {
+    judul = "WATCH MOTOSPOT GAME"
+    sum = "<p><b>On Board Satu Lap di Sirkuit Mandalika Lombok untuk MotoGP Indonesia #RaceTo2021</b></p>"
+  } else if (konten === "nfl") {
+    judul = "WATCH NFL"
+    sum = "<p><b>Five massive tackles at Rugby World Cup 2019</b></p>"
+  } else if (konten === "xone") {
+    judul = "XONE"
+    sum = "<p><b>Xone Sports Bar And Grill</b></p>"
   }
   document.getElementById("judul").innerHTML = judul;
   document.getElementById("summary").innerHTML = sum;
