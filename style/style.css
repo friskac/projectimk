@@ -34,14 +34,9 @@ img.logo {
 
 .btnlive {
     position: relative;
-    /* background-color: white; */
-    /* color: rgb(49, 50, 61); */
-    /* border-radius: 5px; */
     font-family: 'Lucida Sans Regular';
-    /* display: inline; */
     margin-top: 40px;
     margin-left: 40%;
-    /* padding: 36px; */
 }
 
 .btn-secondary:focus{
@@ -50,19 +45,6 @@ img.logo {
     border-radius: 15px !important;
     outline: none !important;
 }
-
-/* .btnlive:hover {
-    background-color: rgb(49, 50, 61);
-    color: white;
-    border-radius: 15px;
-    transition: all 0.5s ease 0s;
-}
-
-.btnlive:active{
-    background-color: rgb(49, 50, 61);
-    color: white;
-    border-radius: 15px;
-} */
 
 #btnsettings {
     position: absolute;
